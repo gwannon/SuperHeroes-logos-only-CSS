@@ -306,6 +306,39 @@ content: "";
   clip-path: polygon(70% 0%, 0% 56%, 60% 56%, 30% 100%, 100% 44%, 40% 44%);
 }
 
+/* Red Tornado */
+
+.redtornado {
+  --width: 15vw;
+  width: var(--width);
+  height: var(--width);
+  border-radius: 100%;
+  background: #e4b92b;
+  position: relative;
+  overflow: hidden;
+}
+
+.redtornado:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 60%;
+  background-color: #c00000;
+  top: 40%;
+  left: 0%;
+  position: absolute;
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 40%,
+    65% 40%,
+    65% 100%,
+    35% 100%,
+    35% 40%,
+    0% 40%
+  );
+}
+
 
 /* Shazam */
 
