@@ -2,6 +2,7 @@
 Superheroes logos only with CSS3 and a simple div.
 
 * Aquaman
+* Bizarro
 * Black Widow
 * Captan América
 * Daredevil
