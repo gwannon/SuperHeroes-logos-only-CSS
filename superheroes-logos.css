@@ -260,6 +260,43 @@ content: "";
   );
 }
 
+/* Legion of superheroes */
+
+.legionsuperheroes {
+  --width: 15vw;
+  width: var(--width);
+  height: var(--width);
+  border-radius: 100%;
+  background: radial-gradient( circle, #000 0%, #000 60%, #CFB53B 61%, #CFB53B 100% );
+  position: relative;
+  overflow: hidden;
+}
+
+.legionsuperheroes:after {
+  content: "";
+  display: block;
+  width: 71%;
+  height: 71%;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+	background: transparent;
+	border-bottom: calc(var(--width) * 0.12) solid #CFB53B;
+	border-left: calc(var(--width) * 0.12) solid #CFB53B;
+}
+
+.legionsuperheroes:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 10%;
+	right: 0%;
+	width: 71%;
+	height: 71%;
+	background: #CFB53B;
+	clip-path: polygon(20% 21%, 39% 44%, 31% 49%, 41% 51%, 40% 61%, 47% 55%, 54% 62%, 54% 53%, 63% 52%, 56% 47%, 63% 40%, 53% 41%, 52% 32%, 46% 38%);
+}
+
 /* Martian Manhunter */
 
 .martianmanhunter {
@@ -438,7 +475,7 @@ content: "";
   position: relative;
 }
 
-div.superman:after {
+.superman:after {
   content: "S";
   width: var(--width);
   height: calc((var(--width) / 4) * 3);
@@ -454,7 +491,7 @@ div.superman:after {
   font-family: Palatino, Georgia, Courier, Times, serif;
 }
 
-div.superman:before {
+.superman:before {
   width: var(--innerwidth);
   height: calc((var(--innerwidth) / 4) * 3);
   content: " ";
@@ -495,5 +532,7 @@ div.superman:before {
 .xmen:before {
 	transform: rotate(-45deg)
 }
+
+
 
 
