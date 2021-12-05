@@ -11,6 +11,7 @@ Superheroes logos only with CSS3 and a simple div.
 * Hawkeye
 * Martian Manhunter
 * Ms. Marvel
+* Red tornado
 * Shazam
 * Superman
 * X-Men
