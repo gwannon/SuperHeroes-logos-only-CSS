@@ -339,6 +339,29 @@ content: "";
   );
 }
 
+/* Orion New Gods */
+
+.orion,
+.orion:before,
+.orion:after {
+  --width: 15vw;
+  width: calc(var(--width) * 0.8);
+  height: calc(var(--width) * 0.8);
+	background: radial-gradient(circle, #f2554a 0%, #f2554a 65%, #fbf26e 66%, #fbf26e 100%);
+	transform: rotatez(45deg);
+}
+
+.orion:before,
+.orion:after {
+	content: "";
+	position: absolute;
+	transform: rotatez(60deg);
+}
+
+.orion:after{
+	transform: rotatez(-60deg);
+}
+
 
 /* Shazam */
 
