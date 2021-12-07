@@ -9,6 +9,7 @@ Superheroes logos only with CSS3 and a simple div.
 * Daredevil
 * Deadpool
 * Dr. Manhattan
+* Dr. Strange - With <i></i> inside
 * Fantastic Fours
 * The Flash
 * Green Lantern
