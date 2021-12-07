@@ -24,10 +24,10 @@
   height: 100%;
   background: linear-gradient(
     80deg,
-    rgba(198, 177, 24, 1) 0%,
-    rgba(255, 250, 95, 1) 46%,
-    rgba(255, 250, 95, 1) 52%,
-    rgba(198, 177, 24, 1) 100%
+    #c6b118 0%,
+    #fffa5f 46%,
+    #fffa5f 52%,
+    #c6b118 100%
   );
   clip-path: polygon(
     3% 93%,
@@ -209,6 +209,53 @@
 .daredevil:after {
   top: calc((var(--width) / 5) / 2);
   left: calc(var(--width) / 5);
+}
+
+/* Deadpool */
+
+.deadpool {
+  --width: 15vw;
+  width: var(--width);
+  height: var(--width);
+  border-radius: 100%;
+  background: linear-gradient(
+    90deg,
+    #000 0%,
+    #000 calc(50% - 1vw - 1px),
+    #ff1a21 calc(50% - 1vw),
+    #ff1a21 calc(50% + 1vw),
+    #000 calc(50% + 1vw + 1px),
+    #000 100%
+  );
+  border: 2vw solid #ff1a21;
+  position: relative;
+  overflow: hidden;
+}
+
+.deadpool:after,
+.deadpool:before {
+  --width2: calc(var(--width) * 0.3);
+  --height2: calc((var(--width2) / 3) * 1.5);
+  --top: calc(0% + 2rem);
+  --left: calc(100% - 5rem);
+  content: "";
+  position: absolute;
+  top: calc(55% - (var(--height2) / 2));
+  left: calc(20% - (var(--width2) / 2));
+  width: var(--width2);
+  height: var(--height2);
+  background-color: #fff;
+  border-bottom-left-radius: calc(var(--width2) - (var(--width2) / 10));
+  border-bottom-right-radius: calc((var(--width2) / 3) + (var(--width2) / 10));
+  transform: rotate(22deg);
+}
+
+.deadpool:before {
+  left: calc(80% - (var(--width2) / 2));
+  border-bottom-left-radius: calc((var(--width2) / 3) + (var(--width2) / 10));
+  border-bottom-right-radius: calc(var(--width2) - (var(--width2) / 10));
+  border-top-right-radius: 0px;
+  transform: rotate(-22deg);
 }
 
 /* Dr. Manhtattan */
@@ -498,12 +545,53 @@
   height: var(--width);
   background: linear-gradient(
     97deg,
-    rgba(198, 177, 24, 1) 0%,
-    rgba(255, 250, 95, 1) 46%,
-    rgba(255, 250, 95, 1) 52%,
-    rgba(198, 177, 24, 1) 100%
+    #c6b118 0%,
+    #fffa5f 46%,
+    #fffa5f 52%,
+    #c6b118 100%
   );
   clip-path: polygon(70% 0%, 0% 56%, 60% 56%, 30% 100%, 100% 44%, 40% 44%);
+}
+
+/* Nightwing */
+
+.nightwing {
+  --width: 15vw;
+  width: var(--width);
+  height: var(--width);
+  position: relative;
+  clip-path: polygon(
+    0% 23%,
+    13% 18%,
+    41% 41%,
+    47% 34%,
+    39% 34%,
+    44% 30%,
+    53% 30%,
+    60% 40%,
+    87% 18%,
+    100% 22%,
+    89% 37%,
+    84% 34%,
+    87% 39%,
+    76% 52%,
+    72% 49%,
+    74% 54%,
+    66% 63%,
+    61% 59%,
+    61% 71%,
+    50% 82%,
+    38% 70%,
+    39% 58%,
+    34% 63%,
+    25% 53%,
+    29% 49%,
+    23% 51%,
+    12% 38%,
+    15% 35%,
+    11% 37%
+  );
+  background-color: #1c8bc6;
 }
 
 /* Red Tornado */
@@ -622,10 +710,10 @@
   height: var(--width);
   background: radial-gradient(
     circle,
-    rgba(198, 24, 24, 1) 0%,
-    rgba(255, 95, 95, 1) 32%,
-    rgba(230, 64, 64, 1) 62%,
-    rgba(198, 24, 24, 1) 100%
+    #c61818 0%,
+    #ff5f5f 32%,
+    #e64040 62%,
+    #c61818 100%
   );
   clip-path: polygon(
     25% 2%,
@@ -650,11 +738,11 @@
   height: var(--width);
   background: linear-gradient(
     137deg,
-    rgba(198, 177, 24, 1) 0%,
-    rgba(237, 227, 73, 1) 33%,
-    rgba(255, 208, 95, 1) 51%,
-    rgba(255, 250, 95, 1) 69%,
-    rgba(198, 177, 24, 1) 100%
+    #c6b118 0%,
+    #ede349 33%,
+    #ffd05f 51%,
+    #fffa5f 69%,
+    #c6b118 100%
   );
 
   clip-path: polygon(
@@ -823,43 +911,6 @@
   );
 }
 
-/* X-Men */
-
-.xmen {
-  --width: 15vw;
-  width: var(--width);
-  height: var(--width);
-  border-radius: 100%;
-  background: radial-gradient(
-    circle,
-    #f90100 0%,
-    #f90100 45.5%,
-    #000000 46%,
-    #000000 62.5%,
-    #fdd807 63%,
-    #fdd807 100%
-  );
-  position: relative;
-}
-
-.xmen:after,
-.xmen:before {
-  content: "";
-  display: block;
-  width: 80%;
-  height: 10%;
-  background-color: #000;
-  transform: rotate(45deg);
-  transform-origin: 50% 50%;
-  top: 45%;
-  left: 10%;
-  position: absolute;
-}
-
-.xmen:before {
-  transform: rotate(-45deg);
-}
-
 /* Winter soldier */
 
 .wintersoldier {
@@ -948,4 +999,41 @@
     31% 87%,
     0 87%
   );
+}
+
+/* X-Men */
+
+.xmen {
+  --width: 15vw;
+  width: var(--width);
+  height: var(--width);
+  border-radius: 100%;
+  background: radial-gradient(
+    circle,
+    #f90100 0%,
+    #f90100 45.5%,
+    #000000 46%,
+    #000000 62.5%,
+    #fdd807 63%,
+    #fdd807 100%
+  );
+  position: relative;
+}
+
+.xmen:after,
+.xmen:before {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 10%;
+  background-color: #000;
+  transform: rotate(45deg);
+  transform-origin: 50% 50%;
+  top: 45%;
+  left: 10%;
+  position: absolute;
+}
+
+.xmen:before {
+  transform: rotate(-45deg);
 }
