@@ -7,6 +7,7 @@ Superheroes logos only with CSS3 and a simple div.
 * Bullseye
 * Captan América
 * Daredevil
+* Deadpool
 * Dr. Manhattan
 * Fantastic Fours
 * The Flash
@@ -15,6 +16,7 @@ Superheroes logos only with CSS3 and a simple div.
 * Legion of superheroes
 * Martian Manhunter
 * Ms. Marvel
+* NIghtwing
 * Orion (New Gods)
 * Phoenix
 * Red tornado
