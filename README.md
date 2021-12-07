@@ -4,9 +4,11 @@ Superheroes logos only with CSS3 and a simple div.
 * Aquaman
 * Bizarro
 * Black Widow
+* Bullseye
 * Captan América
 * Daredevil
 * Dr. Manhattan
+* Fantastic Fours
 * The Flash
 * Green Lantern
 * Hawkeye
