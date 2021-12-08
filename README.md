@@ -6,7 +6,8 @@ Superheroes logos only with CSS3 and a simple div.
 * Black Widow
 * Booster Gold
 * Bullseye
-* Captan América
+* Captan America
+* Captain Marvel
 * Daredevil
 * Deadpool
 * Dr. Manhattan
