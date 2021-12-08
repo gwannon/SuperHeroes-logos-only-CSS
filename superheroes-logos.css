@@ -767,37 +767,35 @@
 
 .martianmanhunter {
   --width: 15vw;
+  --barwidth: calc(var(--width) * 0.09);
   width: var(--width);
   height: var(--width);
   border-radius: 100%;
-  background: radial-gradient(
-    circle,
+  background: conic-gradient(
     #348303 0%,
-    #348303 55.5%,
-    #f3ec19 56%,
-    #f3ec19 100%
+    #348303 14%,
+    #171967 14.1%,
+    #171967 86%,
+    #348303 86.1%,
+    #348303 100%
   );
+  border: var(--barwidth) solid yellow;
   position: relative;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .martianmanhunter:after,
 .martianmanhunter:before {
   content: "";
   display: block;
-  width: 100%;
+  width: 101%;
   height: 10%;
-  background: radial-gradient(
-    circle,
-    #ff1100 0%,
-    #ff1100 78%,
-    #f3ec19 78.1%,
-    #f3ec19 100%
-  );
+  background: #ff1100;
   transform: rotate(45deg);
   transform-origin: 50% 50%;
   top: 45%;
-  left: 0%;
+  left: -0.5%;
   position: absolute;
 }
 
