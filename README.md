@@ -29,6 +29,7 @@ Superheroes logos only with CSS3 and a simple div.
 * Superman
 * Titans
 * Quicksilver
+* Vixen
 * Winter Soldier
 * X-Men
 
