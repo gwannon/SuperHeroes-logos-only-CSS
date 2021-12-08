@@ -8,6 +8,7 @@ Superheroes logos only with CSS3 and a simple div.
 * Bullseye
 * Captan America
 * Captain Marvel
+* Ciborg
 * Daredevil
 * Deadpool
 * Dr. Manhattan
@@ -24,7 +25,8 @@ Superheroes logos only with CSS3 and a simple div.
 * Nightwing
 * Orion (New Gods)
 * Phoenix
-* Red tornado
+* Red Hood
+* Red Tornado
 * Shazam
 * Star sapphire
 * Superman
