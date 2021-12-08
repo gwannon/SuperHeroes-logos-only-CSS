@@ -306,6 +306,51 @@
   height: 35%;
 }
 
+/* Ciborg */
+
+.ciborg {
+  --width: 15vw;
+  overflow: hidden;
+  width: var(--width);
+  height: var(--width);
+  border-radius: 100%;
+  background: radial-gradient(
+    circle,
+    #f90100 0%,
+    #f90100 42.5%,
+    grey 43%,
+    grey 47%,
+    #000000 47.1%,
+    #000000 56%,
+    grey 56.1%,
+    grey 60%,
+    red 60.1%,
+    red 67%,
+    grey 67.1%,
+    grey 100%
+  );
+  position: relative;
+}
+
+.ciborg:before {
+  content: "";
+  display: block;
+  width: 10.5%;
+  height: 10%;
+  background: linear-gradient(
+    180deg,
+    grey 0%,
+    grey 20%,
+    #000 20%,
+    #000 80%,
+    grey 80%,
+    grey 100%
+  );
+  top: 45%;
+  right: 0%;
+  position: absolute;
+}
+
 /* Daredevil */
 
 .daredevil {
@@ -924,6 +969,39 @@
   position: relative;
 }
 
+/* Red Hood */
+
+.redhood {
+  --width: 15vw;
+  width: var(--width);
+  height: var(--width);
+  position: relative;
+  background-color: #b31401;
+  clip-path: polygon(
+    0% 47%,
+    18% 30%,
+    44% 38%,
+    47% 29%,
+    48% 34%,
+    52% 34%,
+    53% 29%,
+    56% 38%,
+    83% 30%,
+    100% 48%,
+    93% 46%,
+    72% 56%,
+    71% 60%,
+    66% 59%,
+    55% 64%,
+    51% 71%,
+    47% 65%,
+    33% 58%,
+    29% 60%,
+    28% 56%,
+    6% 46%
+  );
+}
+
 /* Red Tornado */
 
 .redtornado {
@@ -1368,4 +1446,3 @@
 .xmen:before {
   transform: rotate(-45deg);
 }
-
