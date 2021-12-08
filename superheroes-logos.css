@@ -14,7 +14,7 @@
     50% 20%,
     20% 100%
   );
-  position: absolute;
+  position: relative;
 }
 
 .aquaman:before {
@@ -776,6 +776,38 @@
   clip-path: polygon(70% 0%, 0% 56%, 60% 56%, 30% 100%, 100% 44%, 40% 44%);
 }
 
+/* Moonknight */
+
+.moonknight {
+  --width: 15vw;
+  width: var(--width);
+  height: var(--width);
+  border-radius: 100%;
+  background: radial-gradient(
+    circle,
+    #000 0%,
+    #000 51%,
+    #fff 51.5%,
+    #fff 62.5%,
+    #000 63%,
+    #000 100%
+  );
+  position: relative;
+  overflow: hidden;
+}
+
+.moonknight:before {
+  content: "";
+  display: block;
+  width: 55%;
+  height: 55%;
+  background-color: #fff;
+  top: 22.5%;
+  left: 35%;
+  border-radius: 100%;
+  position: absolute;
+}
+
 /* Nightwing */
 
 .nightwing {
@@ -1336,3 +1368,4 @@
 .xmen:before {
   transform: rotate(-45deg);
 }
+
