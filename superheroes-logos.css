@@ -116,6 +116,46 @@
   clip-path: polygon(0% 0%, 100% 0%, 70% 50%, 100% 100%, 0% 100%, 30% 50%);
 }
 
+/* Booster Gold */
+
+.boostergold {
+  --width: 15vw;
+  width: var(--width);
+  height: var(--width);
+  background: repeating-conic-gradient(
+    #e8df5e 0%,
+    #a88200 8%,
+    #a88200 12%,
+    #e8df5e 20%
+  );
+  clip-path: polygon(0% 26%, 100% 26%, 50% 86%);
+  position: relative;
+}
+
+.boostergold:before {
+  --width2: calc(var(--width) * 0.35);
+  position: absolute;
+  top: calc(50% - (var(--width2) / 2));
+  background: radial-gradient(circle, #2801f2 0%, #03010c 100%);
+  left: calc(50% - (var(--width2) / 2));
+  display: block;
+  content: "";
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  width: var(--width2);
+  height: var(--width2);
+}
+
 /* Bulleyes */
 
 .bullseye {
@@ -553,6 +593,38 @@
     52% 32%,
     46% 38%
   );
+}
+
+/* Lexcorp */
+
+.lexcorp {
+  --width: 15vw;
+  width: var(--width);
+  height: var(--width);
+  border-radius: 100%;
+  background: radial-gradient(
+    circle,
+    #8bc53d 0%,
+    #8bc53d 65%,
+    #000 65.5%,
+    #000 100%
+  );
+  position: relative;
+  overflow: hidden;
+}
+
+.lexcorp:after {
+  content: "";
+  display: block;
+  width: 71%;
+  height: 71%;
+  position: absolute;
+  top: 0%;
+  right: -12%;
+  background: transparent;
+  border-bottom: calc(var(--width) * 0.15) solid #000;
+  border-left: calc(var(--width) * 0.3) solid #000;
+  transform: skewX(-12deg);
 }
 
 /* Martian Manhunter */
