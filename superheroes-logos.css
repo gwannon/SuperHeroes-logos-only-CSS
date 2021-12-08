@@ -255,19 +255,22 @@
 
 .deadpool {
   --width: 15vw;
+  --barwidth: calc(var(--width) * 0.09);
   width: var(--width);
   height: var(--width);
   border-radius: 100%;
   background: linear-gradient(
     90deg,
     #000 0%,
-    #000 calc(50% - 1vw - 1px),
-    #ff1a21 calc(50% - 1vw),
-    #ff1a21 calc(50% + 1vw),
-    #000 calc(50% + 1vw + 1px),
+    #000 calc(50% - (var(--barwidth) / 2) - 1px),
+    #ff1a21 calc(50% - (var(--barwidth) / 2)),
+    #ff1a21 calc(50% + (var(--barwidth) / 2)),
+    #000 calc(50% + (var(--barwidth) / 2) + 1px),
     #000 100%
   );
-  border: 2vw solid #ff1a21;
+  border: var(--barwidth) solid #ff1a21;
+
+  box-sizing: border-box;
   position: relative;
   overflow: hidden;
 }
@@ -726,39 +729,6 @@
   background-color: #1c8bc6;
 }
 
-/* Red Tornado */
-
-.redtornado {
-  --width: 15vw;
-  width: var(--width);
-  height: var(--width);
-  border-radius: 100%;
-  background: #e4b92b;
-  position: relative;
-  overflow: hidden;
-}
-
-.redtornado:before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 60%;
-  background-color: #c00000;
-  top: 40%;
-  left: 0%;
-  position: absolute;
-  clip-path: polygon(
-    0% 0%,
-    100% 0%,
-    100% 40%,
-    65% 40%,
-    65% 100%,
-    35% 100%,
-    35% 40%,
-    0% 40%
-  );
-}
-
 /* Orion New Gods */
 
 .orion,
@@ -832,6 +802,39 @@
     8% 16%
   );
   position: relative;
+}
+
+/* Red Tornado */
+
+.redtornado {
+  --width: 15vw;
+  width: var(--width);
+  height: var(--width);
+  border-radius: 100%;
+  background: #e4b92b;
+  position: relative;
+  overflow: hidden;
+}
+
+.redtornado:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 60%;
+  background-color: #c00000;
+  top: 40%;
+  left: 0%;
+  position: absolute;
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 40%,
+    65% 40%,
+    65% 100%,
+    35% 100%,
+    35% 40%,
+    0% 40%
+  );
 }
 
 /* Shazam */
@@ -994,6 +997,41 @@
   position: absolute;
   top: calc(((var(--border) / 4) * 2) * 0.9);
   left: calc(var(--border) * 0.9);
+}
+
+/* Titans */
+
+.titans {
+  --width: 15vw;
+  width: var(--width);
+  height: var(--width);
+  border-radius: 100%;
+  border: calc(var(--width) * 0.1) solid #f2b22e;
+  background-color: #000;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.titans:before {
+  content: "";
+  display: block;
+  width: calc(100% - (var(--width) * 0.08));
+  height: calc(100% - (var(--width) * 0.08));
+  background-color: #f2b22e;
+  top: calc(0% + (var(--width) * 0.04));
+  left: calc(0% + (var(--width) * 0.04));
+  border-radius: 100%;
+  position: absolute;
+  clip-path: polygon(
+    0% 25%,
+    100% 25%,
+    100% 45%,
+    60% 45%,
+    60% 100%,
+    40% 100%,
+    40% 45%,
+    0% 45%
+  );
 }
 
 /* Quicksilver */
