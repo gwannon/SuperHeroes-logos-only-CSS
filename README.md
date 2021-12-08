@@ -20,6 +20,7 @@ Superheroes logos only with CSS3 and a simple div.
 * Lexcorp
 * Martian Manhunter
 * Ms. Marvel
+* Moonknight
 * Nightwing
 * Orion (New Gods)
 * Phoenix
