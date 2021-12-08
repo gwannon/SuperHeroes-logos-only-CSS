@@ -4,6 +4,7 @@ Superheroes logos only with CSS3 and a simple div.
 * Aquaman
 * Bizarro
 * Black Widow
+* Booster Gold
 * Bullseye
 * Captan América
 * Daredevil
@@ -15,9 +16,10 @@ Superheroes logos only with CSS3 and a simple div.
 * Green Lantern
 * Hawkeye
 * Legion of superheroes
+* Lexcorp
 * Martian Manhunter
 * Ms. Marvel
-* NIghtwing
+* Nightwing
 * Orion (New Gods)
 * Phoenix
 * Red tornado
