@@ -26,6 +26,7 @@ Superheroes logos only with CSS3 and a simple div.
 * Shazam
 * Star sapphire
 * Superman
+* Titans
 * Quicksilver
 * Winter Soldier
 * X-Men
