@@ -1169,6 +1169,47 @@
   );
 }
 
+/* Vixen */
+
+.vixen {
+  --width: 15vw;
+  width: var(--width);
+  height: var(--width);
+  position: relative;
+  background-color: #f2a83c;
+  clip-path: polygon(
+    2% 0%,
+    41% 24%,
+    59% 24%,
+    98% 0%,
+    86% 44%,
+    97% 57%,
+    50% 100%,
+    3% 57%,
+    14% 44%
+  );
+}
+
+.vixen:before,
+.vixen:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 24%;
+  border-radius: 100%;
+  width: 20%;
+  height: 11%;
+  background-color: #393033;
+  transform: rotate(45deg);
+  clip-path: polygon(0% 50%, 60% 30%, 100% 50%, 100% 100%, 0% 100%);
+}
+
+.vixen:after {
+  left: 56%;
+  transform: scalex(-1) rotate(45deg);
+}
+
 /* Winter soldier */
 
 .wintersoldier {
