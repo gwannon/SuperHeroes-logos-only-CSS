@@ -1,3 +1,28 @@
+body {
+  background-color: #000000;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: Arial;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 25vw;
+  width: 25%;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+a {
+  color: #fff;
+}
+
 /* Aquaman */
 
 .aquaman {
@@ -572,12 +597,14 @@
 /* The Flash */
 
 .flash {
-  --width: 10vw;
+  --width: 15vw;
+  --barwidth: calc(var(--width) * 0.09);
   background-color: #fff;
   width: var(--width);
   height: var(--width);
   border-radius: 100%;
-  border: 1.5vw solid #f9e92f;
+  border: var(--barwidth) solid #f9e92f;
+  box-sizing: border-box;
   position: relative;
 }
 
@@ -586,7 +613,7 @@
   display: block;
   width: var(--width);
   height: calc(var(--width) * 1.8);
-  top: calc(var(--width) * -0.4);
+  top: calc(var(--width) * -0.45);
   clip-path: polygon(
     66% 0%,
     34% 38%,
@@ -601,14 +628,15 @@
   );
   background-color: #facb33;
   position: absolute;
+  left: calc(var(--width) * -0.09);
 }
 
 /* Green Lantern */
 
 .greenlantern {
   --width: 15vw;
-  width: var(--width);
-  height: var(--width);
+  width: calc(var(--width) * 0.8);
+  height: calc(var(--width) * 0.8);
   border-radius: 100%;
   background: radial-gradient(
     circle,
@@ -625,21 +653,21 @@
   display: block;
   background-color: #0f4f34;
   position: absolute;
-  width: var(--width);
+  width: calc(var(--width) * 0.8);
   height: 120%;
   left: 0px;
-  top: calc(var(--width) / 5 * -0.5);
+  top: -10%;
   clip-path: polygon(
     0% 0%,
     100% 0%,
     100% 100%,
     0% 100%,
-    10% calc((100% - var(--width) / 5)),
-    90% calc((100% - var(--width) / 5)),
+    10% calc((100% - var(--width) / 7)),
+    90% calc((100% - var(--width) / 7)),
     100% 100%,
     100% 0%,
-    90% calc(var(--width) / 5),
-    10% calc(var(--width) / 5)
+    90% calc(var(--width) / 7),
+    10% calc(var(--width) / 7)
   );
 }
 
@@ -892,12 +920,62 @@
   background-color: #1c8bc6;
 }
 
+/* Nova Corps */
+
+.nova {
+  --width: 15vw;
+  width: var(--width);
+  height: var(--width);
+  position: relative;
+  background: #bc1b05;
+  background: conic-gradient(
+    from 0deg at 50% 73%,
+    #bc1b05 0%,
+    #6c1104 6%,
+    #bc1b05 10%,
+    #6c1104 15%,
+    #bc1b05 21%,
+    #6c1104 32%,
+    #bc1b05 38%,
+    #6c1104 46%,
+    #bc1b05 50%,
+    #6c1104 54%,
+    #bc1b05 63%,
+    #6c1104 70%,
+    #bc1b05 79%,
+    #6c1104 85%,
+    #bc1b05 90%,
+    #6c1104 94%,
+    #bc1b05 100%
+  );
+  clip-path: polygon(
+    50% 0%,
+    44% 60%,
+    34% 50%,
+    38% 65%,
+    7% 61%,
+    43% 76%,
+    36% 86%,
+    46% 84%,
+    50% 100%,
+    54% 83%,
+    64% 87%,
+    57% 76%,
+    95% 61%,
+    62% 64%,
+    67% 51%,
+    56% 60%
+  );
+}
+
 /* Orion New Gods */
+.orion {
+  --width: 15vw;
+}
 
 .orion,
 .orion:before,
 .orion:after {
-  --width: 15vw;
   width: calc(var(--width) * 0.8);
   height: calc(var(--width) * 0.8);
   background: radial-gradient(
@@ -1091,6 +1169,62 @@
   );
   top: 0px;
   left: 0px;
+  position: absolute;
+}
+
+/* She-Hulk */
+
+.shehulk {
+  --width: 15vw;
+  --barwidth: calc(var(--width) * 0.05);
+  width: var(--width);
+  height: var(--width);
+  border-radius: 100%;
+  background: #6df807;
+  border: var(--barwidth) solid #0f7005;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.shehulk:before {
+  content: "";
+  display: block;
+  border-radius: 100%;
+  width: 90%;
+  height: 90%;
+  background: conic-gradient(
+    #0f7005 0%,
+    #0f7005 16.5%,
+    #6df807 17%,
+    #6df807 33%,
+    #0f7005 34%,
+    #0f7005 50%,
+    #6df807 50.5%,
+    #6df807 66.5%,
+    #0f7005 67%,
+    #0f7005 83.5%,
+    #6df807 84%,
+    #6df807 100%
+  );
+  transform: rotate(30deg);
+  top: 5%;
+  left: 5%;
+  position: absolute;
+}
+
+.shehulk:after {
+  --barwidth: calc(var(--width) * 0.025);
+  content: "";
+  display: block;
+  border-radius: 100%;
+  width: 30%;
+  height: 30%;
+  background: #0f7005;
+  top: 35%;
+  left: 35%;
+  border: var(--barwidth) solid #6df807;
+  box-sizing: border-box;
   position: absolute;
 }
 
