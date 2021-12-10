@@ -23,11 +23,13 @@ Superheroes logos only with CSS3 and a simple div.
 * Ms. Marvel
 * Moonknight
 * Nightwing
+* Nova Corps
 * Orion (New Gods)
 * Phoenix
 * Red Hood
 * Red Tornado
 * Shazam
+* She-Hulk
 * Star sapphire
 * Superman
 * Titans
