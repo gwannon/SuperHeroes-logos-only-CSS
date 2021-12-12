@@ -1,3 +1,28 @@
+body {
+  background-color: #000000;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: Arial;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 25vw;
+  width: 25%;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+a {
+  color: #fff;
+}
+
 /* Avengers */
 
 .avengers {
@@ -735,6 +760,54 @@
   left: 22.5%;
   position: absolute;
   clip-path: polygon(0% 0%, 50% 30%, 100% 0%, 100% 70%, 50% 100%, 0% 70%);
+}
+
+/* Indigo Lanterns */
+
+.indigolanterns {
+  --width: 15vw;
+  width: var(--width);
+  height: var(--width);
+  border-radius: 100%;
+  background: radial-gradient(
+    circle,
+    #a6bae1 0%,
+    #a6bae1 21.5%,
+    #4b0082 22%,
+    #4b0082 29%,
+    #a6bae1 29.5%,
+    #a6bae1 59.5%,
+    #4b0082 60%,
+    #4b0082 100%
+  );
+  position: relative;
+}
+
+.indigolanterns:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 100%;
+  height: 100%;
+  background: #4b0082;
+  clip-path: polygon(
+    34% 37%,
+    50% 26%,
+    66% 37%,
+    67% 62%,
+    50% 74%,
+    33% 62%,
+    26% 62%,
+    50% 81%,
+    75% 62%,
+    66% 62%,
+    66% 37%,
+    74% 37%,
+    50% 19%,
+    27% 37%
+  );
 }
 
 /* Legion of superheroes */
