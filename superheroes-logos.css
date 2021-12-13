@@ -47,9 +47,12 @@
 /* Avengers */
 
 .avengers {
+  --color1: #ff1a21;
+  --color2: #941014;
+  --colorbg: #000;
   border-radius: 100%;
-  background: #000;
-  border: calc(var(--width) * 0.06) solid #ff1a21;
+  background: var(--colorbg);
+  border: calc(var(--width) * 0.06) solid var(--color1);
   box-sizing: border-box;
 }
 
@@ -61,7 +64,7 @@
   right: -15%;
   width: 130%;
   height: 130%;
-  background: black;
+  background: var(--colorbg);
   clip-path: polygon(22% 78%, 36.5% 91%, 34% 96.5%, 18.5% 86%);
 }
 
@@ -73,7 +76,7 @@
   right: -15%;
   width: 130%;
   height: 130%;
-  background: linear-gradient(216deg, #ff1a21 0%, #ff1a21 60%, #941014 100%);
+  background: linear-gradient(216deg, var(--color1) 0%, var(--color1) 60%, var(--color2) 100%);
   clip-path: polygon(
     14% 100%,
     61% 0%,
@@ -511,13 +514,15 @@
 /* Dr. Stramge */
 
 .drstrange {
+  --color1: #ce2127;
+  --colorbg: #000;
   border-radius: 100%;
   background: radial-gradient(
     circle,
-    #000 0%,
-    #000 60.5%,
-    #ce2127 60%,
-    #ce2127 100%
+    var(--colorbg) 0%,
+    var(--colorbg) 60.5%,
+    var(--color1) 60%,
+    var(--color1) 100%
   );
   overflow: hidden;
   transform: rotate(-20deg);
@@ -538,8 +543,8 @@
   display: block;
   width: 200%;
   height: 100%;
-  border: calc(var(--width) * 0.17) solid #ce2127;
-  border-bottom: calc(var(--width) * 0.03) solid #ce2127;
+  border: calc(var(--width) * 0.17) solid var(--color1);
+  border-bottom: calc(var(--width) * 0.03) solid var(--color1);
   border-radius: 100%;
   top: -70%;
   right: -22.5%;
@@ -549,7 +554,7 @@
 .drstrange:after,
 .drstrange > *:after {
   top: 60%;
-  border-top: calc(var(--width) * 0.03) solid #ce2127;
+  border-top: calc(var(--width) * 0.03) solid var(--color1);
 }
 
 .drstrange > *:before {
@@ -566,13 +571,15 @@
 /* Fantastic Fours */
 
 .fantasticfours {
+  --color1: #fff;
+  --colorbg: #006eb5;
   border-radius: 100%;
   background: radial-gradient(
     circle,
-    #006eb5 0%,
-    #006eb5 60.5%,
-    #fff 61%,
-    #fff 100%
+    var(--colorbg) 0%,
+    var(--colorbg) 60.5%,
+    var(--color1) 61%,
+    var(--color1) 100%
   );
   overflow: hidden;
 }
@@ -585,7 +592,7 @@
   right: 5%;
   width: 100%;
   height: 100%;
-  background: #fff;
+  background: var(--color1);
   clip-path: polygon(
     76% 0%,
     30% 50%,
@@ -878,15 +885,17 @@
 /* Moonknight */
 
 .moonknight {
+  --color1: #000;
+  --colorbg: #fff;
   border-radius: 100%;
   background: radial-gradient(
     circle,
-    #000 0%,
-    #000 51%,
-    #fff 51.5%,
-    #fff 62.5%,
-    #000 63%,
-    #000 100%
+    var(--color1) 0%,
+    var(--color1) 51%,
+    var(--colorbg) 51.5%,
+    var(--colorbg) 62.5%,
+    var(--color1) 63%,
+    var(--color1) 100%
   );
   overflow: hidden;
 }
@@ -896,7 +905,7 @@
   display: block;
   width: 55%;
   height: 55%;
-  background: #fff;
+  background: var(--colorbg);
   top: 22.5%;
   left: 35%;
   border-radius: 100%;
@@ -1189,9 +1198,11 @@
 /* She-Hulk */
 
 .shehulk {
+  --color1: #0f7005;
+  --colorbg: #6df807;
   border-radius: 100%;
-  background: #6df807;
-  border: calc(var(--width) * 0.05) solid #0f7005;
+  background: var(--colorbg);
+  border: calc(var(--width) * 0.05) solid var(--color1);
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -1203,18 +1214,18 @@
   width: 90%;
   height: 90%;
   background: conic-gradient(
-    #0f7005 0%,
-    #0f7005 16.5%,
-    #6df807 17%,
-    #6df807 33%,
-    #0f7005 34%,
-    #0f7005 50%,
-    #6df807 50.5%,
-    #6df807 66.5%,
-    #0f7005 67%,
-    #0f7005 83.5%,
-    #6df807 84%,
-    #6df807 100%
+    var(--color1) 0%,
+    var(--color1) 16.5%,
+    var(--colorbg) 17%,
+    var(--colorbg) 33%,
+    var(--color1) 34%,
+    var(--color1) 50%,
+    var(--colorbg) 50.5%,
+    var(--colorbg) 66.5%,
+    var(--color1) 67%,
+    var(--color1) 83.5%,
+    var(--colorbg)84%,
+    var(--colorbg) 100%
   );
   transform: rotate(30deg);
   top: 5%;
@@ -1228,10 +1239,10 @@
   border-radius: 100%;
   width: 30%;
   height: 30%;
-  background: #0f7005;
+  background: var(--color1);
   top: 35%;
   left: 35%;
-  border: calc(var(--width) * 0.025) solid #6df807;
+  border: calc(var(--width) * 0.025) solid var(--colorbg);
   box-sizing: border-box;
   position: absolute;
 }
@@ -1239,20 +1250,22 @@
 /* Star sapphire */
 
 .starsapphire {
+  --color1: #882461;
+  --colorbg: #e6b4d0;
   border-radius: 100%;
   background: radial-gradient(
     circle,
-    #e6b4d0 0%,
-    #e6b4d0 59.5%,
-    #882461 60%,
-    #882461 100%
+    var(--colorbg) 0%,
+    var(--colorbg) 59.5%,
+    var(--color1) 60%,
+    var(--color1) 100%
   );
 }
 
 .starsapphire:before {
   position: absolute;
   top: 10%;
-  background: #882461;
+  background: var(--color1);
   left: 10%;
   display: block;
   content: "";
@@ -1333,8 +1346,9 @@
 /* Titans */
 
 .titans {
+  --color1: #f2b22e;
   border-radius: 100%;
-  border: calc(var(--width) * 0.1) solid #f2b22e;
+  border: calc(var(--width) * 0.1) solid var(--color1);
   background: #000;
   box-sizing: border-box;
 }
@@ -1344,7 +1358,7 @@
   display: block;
   width: calc(100% - (var(--width) * 0.08));
   height: calc(100% - (var(--width) * 0.08));
-  background: #f2b22e;
+  background: var(--color1);
   top: calc(0% + (var(--width) * 0.04));
   left: calc(0% + (var(--width) * 0.04));
   border-radius: 100%;
