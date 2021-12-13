@@ -1,40 +1,56 @@
-body {
-  background-color: #000000;
-  padding: 0;
-  margin: 0;
-  color: #fff;
-  display: flex;
-  flex-wrap: wrap;
-  font-family: Arial;
-}
+/* General */
 
-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 25vw;
-  width: 25%;
-  overflow: hidden;
-  flex-wrap: nowrap;
-  flex-direction: column;
-}
-
-a {
-  color: #fff;
+.avengers,
+.aquaman,
+.blackwidow,
+.bizarro,
+.boostergold,
+.bullseye,
+.captainamerica,
+.captainmarvel,
+.ciborg,
+.daredevil,
+.deadpool,
+.drmanhattan,
+.drstrange,
+.fantasticfours,
+.flash,
+.greenlantern,
+.hawkeye,
+.indigolanterns,
+.legionsuperheroes,
+.lexcorp,
+.martianmanhunter,
+.moonknight,
+.msmarvel,
+.nightwing,
+.nova,
+.orion,
+.phoenix,
+.redhood,
+.redtornado,
+.shazam,
+.shehulk,
+.starsapphire,
+.superman,
+.titans,
+.quicksilver,
+.vixen,
+.wintersoldier,
+.xmen {
+  --width: 15vw;
+  width: var(--width);
+  height: var(--width);
+  position: relative;
 }
 
 /* Avengers */
 
 .avengers {
-  --width: 15vw;
-  --barwidth: calc(var(--width) * 0.06);
-  width: var(--width);
-  height: var(--width);
   border-radius: 100%;
   background: #000;
-  border: var(--barwidth) solid #ff1a21;
+  border: calc(var(--width) * 0.06) solid #ff1a21;
   box-sizing: border-box;
-  position: relative;
 }
 
 .avengers:before {
@@ -57,12 +73,7 @@ a {
   right: -15%;
   width: 130%;
   height: 130%;
-  background: linear-gradient(
-    216deg,
-    rgba(255, 26, 33, 1) 0%,
-    rgba(255, 26, 33, 1) 60%,
-    rgba(148, 16, 20, 1) 100%
-  );
+  background: linear-gradient(216deg, #ff1a21 0%, #ff1a21 60%, #941014 100%);
   clip-path: polygon(
     14% 100%,
     61% 0%,
@@ -87,10 +98,8 @@ a {
 /* Aquaman */
 
 .aquaman {
-  --width: 15vw;
-  width: var(--width);
   height: calc(var(--width) * 0.8);
-  background-color: #daa530;
+  background: #daa530;
   clip-path: polygon(
     0% 95%,
     35% 0%,
@@ -100,11 +109,9 @@ a {
     50% 20%,
     20% 100%
   );
-  position: relative;
 }
 
 .aquaman:before {
-  --width: 15vw;
   content: "";
   width: 100%;
   height: 100%;
@@ -124,22 +131,19 @@ a {
     50% 16%,
     19% 97%
   );
-  top: 0%;
-  left: 0%;
+  top: 0;
+  left: 0;
   position: absolute;
 }
 
 /* Bizarro */
 
 .bizarro {
-  --width: 15vw;
   --innerwidth: calc(var(--width) * 0.8);
   --border: calc((var(--width) - var(--innerwidth)) / 2);
-  width: var(--width);
   height: calc((var(--width) / 4) * 3);
-  background-color: #56007f;
+  background: #56007f;
   clip-path: polygon(15% 0%, 85% 0%, 100% 25%, 50% 100%, 0% 25%);
-  position: relative;
 }
 
 .bizarro:after {
@@ -163,7 +167,7 @@ a {
   width: var(--innerwidth);
   height: calc((var(--innerwidth) / 4) * 3);
   content: " ";
-  background-color: #ffeb00;
+  background: #ffeb00;
   clip-path: polygon(15% 0%, 85% 0%, 100% 25%, 50% 100%, 0% 25%);
   display: block;
   transform: scale(0.9);
@@ -175,9 +179,6 @@ a {
 /* Black Widow */
 
 .blackwidow {
-  --width: 15vw;
-  width: var(--width);
-  height: var(--width);
   border-radius: 100%;
   background: radial-gradient(
     circle,
@@ -186,7 +187,6 @@ a {
     #c6a502 60%,
     #c6a502 100%
   );
-  position: relative;
   overflow: hidden;
 }
 
@@ -195,7 +195,7 @@ a {
   display: block;
   width: 40%;
   height: 65%;
-  background-color: #c00000;
+  background: #c00000;
   top: 17.5%;
   left: 30%;
   position: absolute;
@@ -205,9 +205,6 @@ a {
 /* Booster Gold */
 
 .boostergold {
-  --width: 15vw;
-  width: var(--width);
-  height: var(--width);
   background: repeating-conic-gradient(
     #e8df5e 0%,
     #a88200 8%,
@@ -215,7 +212,6 @@ a {
     #e8df5e 20%
   );
   clip-path: polygon(0% 26%, 50% 26%, 100% 26%, 50% 86%);
-  position: relative;
   transition: clip-path 1s;
 }
 
@@ -250,9 +246,6 @@ a {
 /* Bulleyes */
 
 .bullseye {
-  --width: 15vw;
-  width: var(--width);
-  height: var(--width);
   border-radius: 100%;
   background: radial-gradient(
     circle,
@@ -265,15 +258,11 @@ a {
     #fff 51%,
     #fff 100%
   );
-  position: relative;
 }
 
 /* Captain America */
 
 .captainamerica {
-  --width: 15vw;
-  width: var(--width);
-  height: var(--width);
   border-radius: 100%;
   background: radial-gradient(
     circle,
@@ -288,14 +277,13 @@ a {
     #1e1a1b 69%,
     #1e1a1b 100%
   );
-  position: relative;
 }
 
 .captainamerica:before {
   --width2: calc(var(--width) * 0.35);
   position: absolute;
   top: calc(50% - (var(--width2) / 2));
-  background-color: white;
+  background: #fff;
   left: calc(50% - (var(--width2) / 2));
   display: block;
   content: "";
@@ -317,9 +305,6 @@ a {
 /* Captain Marvel */
 
 .captainmarvel {
-  --width: 15vw;
-  width: var(--width);
-  height: var(--width);
   border-radius: 100%;
   background: conic-gradient(
     #be0000 0%,
@@ -329,13 +314,12 @@ a {
     #be0000 80.1%,
     #be0000 100%
   );
-  position: relative;
   overflow: hidden;
 }
 
 .captainmarvel:before {
   position: absolute;
-  top: 0%;
+  top: 0;
   background: conic-gradient(
     #e8df5e 0%,
     #e8df5e 20%,
@@ -348,7 +332,7 @@ a {
     #e8df5e 80.6%,
     #e8df5e 100%
   );
-  left: 0%;
+  left: 0;
   display: block;
   width: 100%;
   height: 100%;
@@ -359,13 +343,6 @@ a {
 .captainmarvel:after {
   position: absolute;
   top: 32.5%;
-  /*background: repeating-conic-gradient(
-    #e8df5e 0%,
-    #d9ba53 6%,
-    #e8df5e 12.5%,
-    #d9ba53 18%,
-    #e8df5e 25%
-  );*/
   background: radial-gradient(circle, #fec90d 0%, #fec90d 25%, #856918 63%);
   left: 37.5%;
   display: block;
@@ -395,10 +372,7 @@ a {
 /* Ciborg */
 
 .ciborg {
-  --width: 15vw;
   overflow: hidden;
-  width: var(--width);
-  height: var(--width);
   border-radius: 100%;
   background: radial-gradient(
     circle,
@@ -415,7 +389,6 @@ a {
     grey 67.1%,
     grey 100%
   );
-  position: relative;
 }
 
 .ciborg:before {
@@ -440,11 +413,6 @@ a {
 /* Daredevil */
 
 .daredevil {
-  --width: 15vw;
-  width: var(--width);
-  height: var(--width);
-  position: relative;
-  /*font-style: italic;*/
   font-family: "Times New Roman", Times, serif;
   color: #660033;
   font-size: var(--width);
@@ -456,7 +424,7 @@ a {
   display: block;
   position: absolute;
   top: calc((var(--width) / 5) / -2);
-  left: 0px;
+  left: 0;
 }
 
 .daredevil:after {
@@ -467,10 +435,7 @@ a {
 /* Deadpool */
 
 .deadpool {
-  --width: 15vw;
   --barwidth: calc(var(--width) * 0.09);
-  width: var(--width);
-  height: var(--width);
   border-radius: 100%;
   background: linear-gradient(
     90deg,
@@ -482,9 +447,7 @@ a {
     #000 100%
   );
   border: var(--barwidth) solid #ff1a21;
-
   box-sizing: border-box;
-  position: relative;
   overflow: hidden;
 }
 
@@ -492,15 +455,13 @@ a {
 .deadpool:before {
   --width2: calc(var(--width) * 0.3);
   --height2: calc((var(--width2) / 3) * 1.5);
-  --top: calc(0% + 2rem);
-  --left: calc(100% - 5rem);
   content: "";
   position: absolute;
   top: calc(55% - (var(--height2) / 2));
   left: calc(20% - (var(--width2) / 2));
   width: var(--width2);
   height: var(--height2);
-  background-color: #fff;
+  background: #fff;
   border-bottom-left-radius: calc(var(--width2) - (var(--width2) / 10));
   border-bottom-right-radius: calc((var(--width2) / 3) + (var(--width2) / 10));
   transform: rotate(22deg);
@@ -510,7 +471,7 @@ a {
   left: calc(80% - (var(--width2) / 2));
   border-bottom-left-radius: calc((var(--width2) / 3) + (var(--width2) / 10));
   border-bottom-right-radius: calc(var(--width2) - (var(--width2) / 10));
-  border-top-right-radius: 0px;
+  border-top-right-radius: 0;
   transform: rotate(-22deg);
   transition: height 0.3s, top 0.3s;
 }
@@ -523,9 +484,6 @@ a {
 /* Dr. Manhtattan */
 
 .drmanhattan {
-  --width: 15vw;
-  width: var(--width);
-  height: var(--width);
   border-radius: 100%;
   background: radial-gradient(
     circle,
@@ -536,7 +494,6 @@ a {
     #22284a 63%,
     #22284a 100%
   );
-  position: relative;
 }
 
 .drmanhattan:before {
@@ -544,7 +501,7 @@ a {
   display: block;
   width: calc(var(--width) / 8);
   height: calc(var(--width) / 8);
-  background-color: #22284a;
+  background: #22284a;
   top: calc(0% - ((var(--width) / 8) / 3.5));
   left: calc(50% - ((var(--width) / 8) / 2));
   position: absolute;
@@ -554,9 +511,6 @@ a {
 /* Dr. Stramge */
 
 .drstrange {
-  --width: 15vw;
-  width: var(--width);
-  height: var(--width);
   border-radius: 100%;
   background: radial-gradient(
     circle,
@@ -565,7 +519,6 @@ a {
     #ce2127 60%,
     #ce2127 100%
   );
-  position: relative;
   overflow: hidden;
   transform: rotate(-20deg);
 }
@@ -613,9 +566,6 @@ a {
 /* Fantastic Fours */
 
 .fantasticfours {
-  --width: 15vw;
-  width: var(--width);
-  height: var(--width);
   border-radius: 100%;
   background: radial-gradient(
     circle,
@@ -624,7 +574,6 @@ a {
     #fff 61%,
     #fff 100%
   );
-  position: relative;
   overflow: hidden;
 }
 
@@ -632,7 +581,7 @@ a {
   content: "";
   display: block;
   position: absolute;
-  top: 0%;
+  top: 0;
   right: 5%;
   width: 100%;
   height: 100%;
@@ -658,15 +607,10 @@ a {
 /* The Flash */
 
 .flash {
-  --width: 15vw;
-  --barwidth: calc(var(--width) * 0.09);
-  background-color: #fff;
-  width: var(--width);
-  height: var(--width);
+  background: #fff;
   border-radius: 100%;
-  border: var(--barwidth) solid #f9e92f;
+  border: calc(var(--width) * 0.09) solid #f9e92f;
   box-sizing: border-box;
-  position: relative;
 }
 
 .flash:after {
@@ -687,7 +631,7 @@ a {
     70% 30%,
     53% 30%
   );
-  background-color: #facb33;
+  background: #facb33;
   position: absolute;
   left: calc(var(--width) * -0.09);
 }
@@ -695,7 +639,6 @@ a {
 /* Green Lantern */
 
 .greenlantern {
-  --width: 15vw;
   width: calc(var(--width) * 0.8);
   height: calc(var(--width) * 0.8);
   border-radius: 100%;
@@ -706,17 +649,16 @@ a {
     #0f4f34 46%,
     #0f4f34 100%
   );
-  position: relative;
 }
 
 .greenlantern:after {
   content: "";
   display: block;
-  background-color: #0f4f34;
+  background: #0f4f34;
   position: absolute;
   width: calc(var(--width) * 0.8);
   height: 120%;
-  left: 0px;
+  left: 0;
   top: -10%;
   clip-path: polygon(
     0% 0%,
@@ -735,9 +677,6 @@ a {
 /* Hawkeye */
 
 .hawkeye {
-  --width: 15vw;
-  width: var(--width);
-  height: var(--width);
   border-radius: 100%;
   background: radial-gradient(
     circle,
@@ -746,7 +685,6 @@ a {
     #957bbd 60%,
     #957bbd 100%
   );
-  position: relative;
   overflow: hidden;
 }
 
@@ -755,7 +693,7 @@ a {
   display: block;
   width: 55%;
   height: 65%;
-  background-color: #957bbd;
+  background: #957bbd;
   top: 22.5%;
   left: 22.5%;
   position: absolute;
@@ -765,9 +703,6 @@ a {
 /* Indigo Lanterns */
 
 .indigolanterns {
-  --width: 15vw;
-  width: var(--width);
-  height: var(--width);
   border-radius: 100%;
   background: radial-gradient(
     circle,
@@ -780,15 +715,14 @@ a {
     #4b0082 60%,
     #4b0082 100%
   );
-  position: relative;
 }
 
 .indigolanterns:before {
   content: "";
   display: block;
   position: absolute;
-  top: 0%;
-  right: 0%;
+  top: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   background: #4b0082;
@@ -813,9 +747,6 @@ a {
 /* Legion of superheroes */
 
 .legionsuperheroes {
-  --width: 15vw;
-  width: var(--width);
-  height: var(--width);
   border-radius: 100%;
   background: radial-gradient(
     circle,
@@ -824,7 +755,6 @@ a {
     #cfb53b 61%,
     #cfb53b 100%
   );
-  position: relative;
   overflow: hidden;
 }
 
@@ -834,8 +764,8 @@ a {
   width: 71%;
   height: 71%;
   position: absolute;
-  top: 0%;
-  right: 0%;
+  top: 0;
+  right: 0;
   background: transparent;
   border-bottom: calc(var(--width) * 0.12) solid #cfb53b;
   border-left: calc(var(--width) * 0.12) solid #cfb53b;
@@ -871,9 +801,6 @@ a {
 /* Lexcorp */
 
 .lexcorp {
-  --width: 15vw;
-  width: var(--width);
-  height: var(--width);
   border-radius: 100%;
   background: radial-gradient(
     circle,
@@ -882,7 +809,6 @@ a {
     #000 65.5%,
     #000 100%
   );
-  position: relative;
   overflow: hidden;
 }
 
@@ -892,7 +818,7 @@ a {
   width: 71%;
   height: 71%;
   position: absolute;
-  top: 0%;
+  top: 0;
   right: -12%;
   background: transparent;
   border-bottom: calc(var(--width) * 0.15) solid #000;
@@ -903,10 +829,6 @@ a {
 /* Martian Manhunter */
 
 .martianmanhunter {
-  --width: 15vw;
-  --barwidth: calc(var(--width) * 0.09);
-  width: var(--width);
-  height: var(--width);
   border-radius: 100%;
   background: conic-gradient(
     #348303 0%,
@@ -916,8 +838,7 @@ a {
     #348303 86.1%,
     #348303 100%
   );
-  border: var(--barwidth) solid yellow;
-  position: relative;
+  border: calc(var(--width) * 0.09) solid yellow;
   overflow: hidden;
   box-sizing: border-box;
 }
@@ -943,9 +864,7 @@ a {
 /* Ms. Marvel */
 
 .msmarvel {
-  --width: 15vw;
   width: calc(var(--width) / 1.8);
-  height: var(--width);
   background: linear-gradient(
     97deg,
     #c6b118 0%,
@@ -959,9 +878,6 @@ a {
 /* Moonknight */
 
 .moonknight {
-  --width: 15vw;
-  width: var(--width);
-  height: var(--width);
   border-radius: 100%;
   background: radial-gradient(
     circle,
@@ -972,7 +888,6 @@ a {
     #000 63%,
     #000 100%
   );
-  position: relative;
   overflow: hidden;
 }
 
@@ -981,7 +896,7 @@ a {
   display: block;
   width: 55%;
   height: 55%;
-  background-color: #fff;
+  background: #fff;
   top: 22.5%;
   left: 35%;
   border-radius: 100%;
@@ -991,10 +906,6 @@ a {
 /* Nightwing */
 
 .nightwing {
-  --width: 15vw;
-  width: var(--width);
-  height: var(--width);
-  position: relative;
   clip-path: polygon(
     0% 23%,
     13% 18%,
@@ -1026,17 +937,12 @@ a {
     15% 35%,
     11% 37%
   );
-  background-color: #1c8bc6;
+  background: #1c8bc6;
 }
 
 /* Nova Corps */
 
 .nova {
-  --width: 15vw;
-  width: var(--width);
-  height: var(--width);
-  position: relative;
-  background: #bc1b05;
   background: conic-gradient(
     from 0deg at 50% 73%,
     #6c1104 0%,
@@ -1095,9 +1001,6 @@ a {
 }
 
 /* Orion New Gods */
-.orion {
-  --width: 15vw;
-}
 
 .orion,
 .orion:before,
@@ -1128,10 +1031,8 @@ a {
 /* Phoenix */
 
 .phoenix {
-  --width: 15vw;
-  width: var(--width);
   height: calc(var(--width) * 0.8);
-  background-color: #e3b92c;
+  background: #e3b92c;
   clip-path: polygon(
     0% 0%,
     33% 0%,
@@ -1168,17 +1069,12 @@ a {
     17% 16%,
     8% 16%
   );
-  position: relative;
 }
 
 /* Red Hood */
 
 .redhood {
-  --width: 15vw;
-  width: var(--width);
-  height: var(--width);
-  position: relative;
-  background-color: #b31401;
+  background: #b31401;
   clip-path: polygon(
     0% 47%,
     18% 30%,
@@ -1207,12 +1103,8 @@ a {
 /* Red Tornado */
 
 .redtornado {
-  --width: 15vw;
-  width: var(--width);
-  height: var(--width);
   border-radius: 100%;
   background: #e4b92b;
-  position: relative;
   overflow: hidden;
 }
 
@@ -1221,9 +1113,9 @@ a {
   display: block;
   width: 100%;
   height: 60%;
-  background-color: #c00000;
+  background: #c00000;
   top: 40%;
-  left: 0%;
+  left: 0;
   position: absolute;
   clip-path: polygon(
     0% 0%,
@@ -1240,9 +1132,7 @@ a {
 /* Shazam */
 
 .shazam {
-  --width: 15vw;
   width: calc(var(--width) / 1.8);
-  height: var(--width);
   background: radial-gradient(
     circle,
     #c61818 0%,
@@ -1263,7 +1153,6 @@ a {
     65% 29%,
     92% 2%
   );
-  position: relative;
 }
 
 .shazam:after {
@@ -1279,7 +1168,6 @@ a {
     #fffa5f 69%,
     #c6b118 100%
   );
-
   clip-path: polygon(
     28% 4%,
     11% 29%,
@@ -1293,23 +1181,18 @@ a {
     60% 31%,
     87% 4%
   );
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   position: absolute;
 }
 
 /* She-Hulk */
 
 .shehulk {
-  --width: 15vw;
-  --barwidth: calc(var(--width) * 0.05);
-  width: var(--width);
-  height: var(--width);
   border-radius: 100%;
   background: #6df807;
-  border: var(--barwidth) solid #0f7005;
+  border: calc(var(--width) * 0.05) solid #0f7005;
   box-sizing: border-box;
-  position: relative;
   overflow: hidden;
 }
 
@@ -1340,7 +1223,6 @@ a {
 }
 
 .shehulk:after {
-  --barwidth: calc(var(--width) * 0.025);
   content: "";
   display: block;
   border-radius: 100%;
@@ -1349,7 +1231,7 @@ a {
   background: #0f7005;
   top: 35%;
   left: 35%;
-  border: var(--barwidth) solid #6df807;
+  border: calc(var(--width) * 0.025) solid #6df807;
   box-sizing: border-box;
   position: absolute;
 }
@@ -1357,9 +1239,6 @@ a {
 /* Star sapphire */
 
 .starsapphire {
-  --width: 15vw;
-  width: var(--width);
-  height: var(--width);
   border-radius: 100%;
   background: radial-gradient(
     circle,
@@ -1368,7 +1247,6 @@ a {
     #882461 60%,
     #882461 100%
   );
-  position: relative;
 }
 
 .starsapphire:before {
@@ -1415,14 +1293,11 @@ a {
 /* Superman */
 
 .superman {
-  --width: 15vw;
   --innerwidth: calc(var(--width) * 0.8);
   --border: calc((var(--width) - var(--innerwidth)) / 2);
-  width: var(--width);
   height: calc((var(--width) / 4) * 3);
-  background-color: #ff1122;
+  background: #ff1122;
   clip-path: polygon(15% 0%, 85% 0%, 100% 25%, 50% 100%, 0% 25%);
-  position: relative;
 }
 
 .superman:after {
@@ -1446,7 +1321,7 @@ a {
   width: var(--innerwidth);
   height: calc((var(--innerwidth) / 4) * 3);
   content: " ";
-  background-color: #ffeb00;
+  background: #ffeb00;
   clip-path: polygon(15% 0%, 85% 0%, 100% 25%, 50% 100%, 0% 25%);
   display: block;
   transform: scale(0.9);
@@ -1458,13 +1333,9 @@ a {
 /* Titans */
 
 .titans {
-  --width: 15vw;
-  width: var(--width);
-  height: var(--width);
   border-radius: 100%;
   border: calc(var(--width) * 0.1) solid #f2b22e;
-  background-color: #000;
-  position: relative;
+  background: #000;
   box-sizing: border-box;
 }
 
@@ -1473,7 +1344,7 @@ a {
   display: block;
   width: calc(100% - (var(--width) * 0.08));
   height: calc(100% - (var(--width) * 0.08));
-  background-color: #f2b22e;
+  background: #f2b22e;
   top: calc(0% + (var(--width) * 0.04));
   left: calc(0% + (var(--width) * 0.04));
   border-radius: 100%;
@@ -1493,9 +1364,6 @@ a {
 /* Quicksilver */
 
 .quicksilver {
-  --width: 15vw;
-  width: var(--width);
-  height: var(--width);
   border-radius: 100%;
   background: linear-gradient(
     -45deg,
@@ -1504,7 +1372,6 @@ a {
     #00ccff 51%,
     #00ccff 100%
   );
-  position: relative;
   overflow: hidden;
 }
 
@@ -1512,8 +1379,8 @@ a {
   content: "";
   display: block;
   position: absolute;
-  top: 0%;
-  right: 0%;
+  top: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   background: #fff;
@@ -1540,11 +1407,7 @@ a {
 /* Vixen */
 
 .vixen {
-  --width: 15vw;
-  width: var(--width);
-  height: var(--width);
-  position: relative;
-  background-color: #f2a83c;
+  background: #f2a83c;
   clip-path: polygon(
     2% 0%,
     41% 24%,
@@ -1568,7 +1431,7 @@ a {
   border-radius: 100%;
   width: 20%;
   height: 11%;
-  background-color: #393033;
+  background: #393033;
   transform: rotate(45deg);
   clip-path: polygon(0% 50%, 60% 30%, 100% 50%, 100% 100%, 0% 100%);
 }
@@ -1581,9 +1444,6 @@ a {
 /* Winter soldier */
 
 .wintersoldier {
-  --width: 15vw;
-  width: var(--width);
-  height: var(--width);
   border-radius: 100%;
   background: radial-gradient(
     circle,
@@ -1592,7 +1452,6 @@ a {
     #e6241a 63%,
     #e6241a 100%
   );
-  position: relative;
   overflow: hidden;
 }
 
@@ -1600,7 +1459,7 @@ a {
   --width2: calc(var(--width) * 0.5);
   position: absolute;
   top: calc(50% - (var(--width2) / 2));
-  background-color: #b10b02;
+  background: #b10b02;
   left: calc(50% - (var(--width2) / 2));
   display: block;
   content: "";
@@ -1623,11 +1482,11 @@ a {
 .wintersoldier:before {
   display: block;
   content: "";
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
-  background-color: #e6241a;
+  background: #e6241a;
   clip-path: polygon(
     0% 30%,
     31% 30%,
@@ -1671,9 +1530,6 @@ a {
 /* X-Men */
 
 .xmen {
-  --width: 15vw;
-  width: var(--width);
-  height: var(--width);
   border-radius: 100%;
   background: radial-gradient(
     circle,
@@ -1684,7 +1540,6 @@ a {
     #fdd807 63%,
     #fdd807 100%
   );
-  position: relative;
 }
 
 .xmen:after,
@@ -1693,7 +1548,7 @@ a {
   display: block;
   width: 80%;
   height: 10%;
-  background-color: #000;
+  background: #000;
   transform: rotate(45deg);
   transform-origin: 50% 50%;
   top: 45%;
