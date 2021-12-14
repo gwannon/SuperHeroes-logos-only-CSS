@@ -76,7 +76,12 @@
   right: -15%;
   width: 130%;
   height: 130%;
-  background: linear-gradient(216deg, var(--color1) 0%, var(--color1) 60%, var(--color2) 100%);
+  background: linear-gradient(
+    216deg,
+    var(--color1) 0%,
+    var(--color1) 60%,
+    var(--color2) 100%
+  );
   clip-path: polygon(
     14% 100%,
     61% 0%,
@@ -375,22 +380,25 @@
 /* Ciborg */
 
 .ciborg {
+  --color1: #f90100;
+  --color2: #808080;
+  --colorbg: #000;
   overflow: hidden;
   border-radius: 100%;
   background: radial-gradient(
     circle,
-    #f90100 0%,
-    #f90100 42.5%,
-    #808080 43%,
-    #808080 47%,
-    #000 47.1%,
-    #000 56%,
-    #808080 56.1%,
-    #808080 60%,
-    #ff0000 60.1%,
-    #ff0000 67%,
-    #808080 67.1%,
-    #808080 100%
+    var(--color1) 0%,
+    var(--color1) 42.5%,
+    var(--color2) 43%,
+    var(--color2) 47%,
+    var(--colorbg) 47.1%,
+    var(--colorbg) 56%,
+    var(--color2) 56.1%,
+    var(--color2) 60%,
+    var(--color1) 60.1%,
+    var(--color1) 67%,
+    var(--color2) 67.1%,
+    var(--color2) 100%
   );
 }
 
@@ -401,12 +409,12 @@
   height: 10%;
   background: linear-gradient(
     180deg,
-    #808080 0%,
-    #808080 20%,
-    #000 20%,
-    #000 80%,
-    #808080 80%,
-    #808080 100%
+    var(--color2) 0%,
+    var(--color2) 20%,
+    var(--colorbg) 20%,
+    var(--colorbg) 80%,
+    var(--color2) 80%,
+    var(--color2) 100%
   );
   top: 45%;
   right: 0%;
@@ -416,8 +424,9 @@
 /* Daredevil */
 
 .daredevil {
+  --color1: #660033;
   font-family: "Times New Roman", Times, serif;
-  color: #660033;
+  color: var(--color1);
   font-size: var(--width);
 }
 
@@ -438,18 +447,21 @@
 /* Deadpool */
 
 .deadpool {
+  --color1: #ff1a21;
+  --color2: #fff;
+  --colorbg: #000;
   --barwidth: calc(var(--width) * 0.09);
   border-radius: 100%;
   background: linear-gradient(
     90deg,
-    #000 0%,
-    #000 calc(50% - (var(--barwidth) / 2) - 1px),
-    #ff1a21 calc(50% - (var(--barwidth) / 2)),
-    #ff1a21 calc(50% + (var(--barwidth) / 2)),
-    #000 calc(50% + (var(--barwidth) / 2) + 1px),
-    #000 100%
+    var(--colorbg) 0%,
+    var(--colorbg) calc(50% - (var(--barwidth) / 2) - 1px),
+    var(--color1) calc(50% - (var(--barwidth) / 2)),
+    var(--color1) calc(50% + (var(--barwidth) / 2)),
+    var(--colorbg) calc(50% + (var(--barwidth) / 2) + 1px),
+    var(--colorbg) 100%
   );
-  border: var(--barwidth) solid #ff1a21;
+  border: var(--barwidth) solid var(--color1);
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -464,7 +476,7 @@
   left: calc(20% - (var(--width2) / 2));
   width: var(--width2);
   height: var(--height2);
-  background: #fff;
+  background: var(--color2);
   border-bottom-left-radius: calc(var(--width2) - (var(--width2) / 10));
   border-bottom-right-radius: calc((var(--width2) / 3) + (var(--width2) / 10));
   transform: rotate(22deg);
@@ -710,17 +722,19 @@
 /* Indigo Lanterns */
 
 .indigolanterns {
+  --color1: #4b0082;
+  --colorbg: #a6bae1;
   border-radius: 100%;
   background: radial-gradient(
     circle,
-    #a6bae1 0%,
-    #a6bae1 21.5%,
-    #4b0082 22%,
-    #4b0082 29%,
-    #a6bae1 29.5%,
-    #a6bae1 59.5%,
-    #4b0082 60%,
-    #4b0082 100%
+    var(--colorbg) 0%,
+    var(--colorbg) 21.5%,
+    var(--color1) 22%,
+    var(--color1) 29%,
+    var(--colorbg) 29.5%,
+    var(--colorbg) 59.5%,
+    var(--color1) 60%,
+    var(--color1) 100%
   );
 }
 
@@ -732,7 +746,7 @@
   right: 0;
   width: 100%;
   height: 100%;
-  background: #4b0082;
+  background: var(--color1);
   clip-path: polygon(
     34% 37%,
     50% 26%,
@@ -754,13 +768,15 @@
 /* Legion of superheroes */
 
 .legionsuperheroes {
+  --color1: #cfb53b;
+  --colorbg: #000;
   border-radius: 100%;
   background: radial-gradient(
     circle,
-    #000 0%,
-    #000 60%,
-    #cfb53b 61%,
-    #cfb53b 100%
+    var(--colorbg) 0%,
+    var(--colorbg) 60%,
+    var(--color1) 61%,
+    var(--color1) 100%
   );
   overflow: hidden;
 }
@@ -774,8 +790,8 @@
   top: 0;
   right: 0;
   background: transparent;
-  border-bottom: calc(var(--width) * 0.12) solid #cfb53b;
-  border-left: calc(var(--width) * 0.12) solid #cfb53b;
+  border-bottom: calc(var(--width) * 0.12) solid var(--color1);
+  border-left: calc(var(--width) * 0.12) solid var(--color1);
 }
 
 .legionsuperheroes:before {
@@ -786,7 +802,7 @@
   right: 0%;
   width: 71%;
   height: 71%;
-  background: #cfb53b;
+  background: var(--color1);
   clip-path: polygon(
     20% 21%,
     39% 44%,
@@ -914,7 +930,9 @@
 
 /* Nightwing */
 
-.nightwing {
+.nightwing {  
+  --color1: #1c8bc6;
+  background: var(--color1);
   clip-path: polygon(
     0% 23%,
     13% 18%,
@@ -946,7 +964,6 @@
     15% 35%,
     11% 37%
   );
-  background: #1c8bc6;
 }
 
 /* Nova Corps */
@@ -1040,8 +1057,9 @@
 /* Phoenix */
 
 .phoenix {
+  --color1: #e3b92c;
   height: calc(var(--width) * 0.8);
-  background: #e3b92c;
+  background: var(--color1);
   clip-path: polygon(
     0% 0%,
     33% 0%,
@@ -1083,7 +1101,8 @@
 /* Red Hood */
 
 .redhood {
-  background: #b31401;
+  --color1: #b31401;
+  background: var(--color1);
   clip-path: polygon(
     0% 47%,
     18% 30%,
@@ -1224,7 +1243,7 @@
     var(--colorbg) 66.5%,
     var(--color1) 67%,
     var(--color1) 83.5%,
-    var(--colorbg)84%,
+    var(--colorbg) 84%,
     var(--colorbg) 100%
   );
   transform: rotate(30deg);
@@ -1294,7 +1313,7 @@
 .starsapphire:after {
   position: absolute;
   top: 32.5%;
-  background: #e6b4d0;
+  background: var(--colorbg);
   left: 37.5%;
   display: block;
   content: "";
@@ -1421,7 +1440,9 @@
 /* Vixen */
 
 .vixen {
-  background: #f2a83c;
+  --color1: #f2a83c;
+  --color2: #393033;
+  background: var(--color1);
   clip-path: polygon(
     2% 0%,
     41% 24%,
@@ -1445,7 +1466,7 @@
   border-radius: 100%;
   width: 20%;
   height: 11%;
-  background: #393033;
+  background: var(--color2);
   transform: rotate(45deg);
   clip-path: polygon(0% 50%, 60% 30%, 100% 50%, 100% 100%, 0% 100%);
 }
@@ -1458,13 +1479,16 @@
 /* Winter soldier */
 
 .wintersoldier {
+  --color1: #b10b02;
+  --color2: #e6241a;
+  --colorbg: #000;
   border-radius: 100%;
   background: radial-gradient(
     circle,
-    #000 0%,
-    #000 62.5%,
-    #e6241a 63%,
-    #e6241a 100%
+    var(--colorbg) 0%,
+    var(--colorbg) 62.5%,
+    var(--color2) 63%,
+    var(--color2) 100%
   );
   overflow: hidden;
 }
@@ -1473,7 +1497,7 @@
   --width2: calc(var(--width) * 0.5);
   position: absolute;
   top: calc(50% - (var(--width2) / 2));
-  background: #b10b02;
+  background: var(--color1);
   left: calc(50% - (var(--width2) / 2));
   display: block;
   content: "";
@@ -1500,7 +1524,7 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background: #e6241a;
+  background: var(--color2);
   clip-path: polygon(
     0% 30%,
     31% 30%,
