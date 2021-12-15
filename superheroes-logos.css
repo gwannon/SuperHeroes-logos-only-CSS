@@ -218,11 +218,15 @@
 /* Booster Gold */
 
 .boostergold {
+  --color1: #e8df5e;
+  --color2: #a88200;
+  --color3: #2801f2;
+  --color4: #03010c;
   background: repeating-conic-gradient(
-    #e8df5e 0%,
-    #a88200 8%,
-    #a88200 12%,
-    #e8df5e 20%
+    var(--color1) 0%,
+    var(--color2) 8%,
+    var(--color2) 12%,
+    var(--color1) 20%
   );
   clip-path: polygon(0% 26%, 50% 26%, 100% 26%, 50% 86%);
   transition: clip-path 1s;
@@ -236,7 +240,7 @@
   --width2: calc(var(--width) * 0.35);
   position: absolute;
   top: calc(50% - (var(--width2) / 2));
-  background: radial-gradient(circle, #2801f2 0%, #03010c 100%);
+  background: radial-gradient(circle, var(--color3) 0%, var(--color4) 100%);
   left: calc(50% - (var(--width2) / 2));
   display: block;
   content: "";
