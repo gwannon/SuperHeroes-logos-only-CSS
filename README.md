@@ -15,8 +15,10 @@ Superheroes logos only with CSS3 and a simple div.
 * Dr. Manhattan
 * Dr. Strange - With i inside
 * Fantastic Fours
-* The Flash
+* The Flash - Barry Allen
+* The Flash - Jay Garrick
 * Green Lantern
+* Gwenpool
 * Hawkeye
 * Indigo Lanterns
 * Legion of superheroes
@@ -36,8 +38,10 @@ Superheroes logos only with CSS3 and a simple div.
 * Superman
 * Titans
 * Quicksilver
+* USAgent
 * Vixen
 * Winter Soldier
 * X-Men
+* Zoom
 
 https://codepen.io/gwannon/pen/QWqjQrd
