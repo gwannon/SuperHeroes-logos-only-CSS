@@ -37,11 +37,13 @@
 .quicksilver,
 .vixen,
 .wintersoldier,
-.xmen {
+.xmen,
+.zoom {
   --width: 15vw;
   width: var(--width);
   height: var(--width);
   position: relative;
+  display: inline-block;
 }
 
 /* Avengers */
@@ -187,13 +189,16 @@
 /* Black Widow */
 
 .blackwidow {
+  --color1: #c6a502;
+  --color2: #c00000;
+  --colorbg: #000;
   border-radius: 100%;
   background: radial-gradient(
     circle,
-    #000 0%,
-    #000 60.5%,
-    #c6a502 60%,
-    #c6a502 100%
+    var(--colorbg) 0%,
+    var(--colorbg) 60.5%,
+    var(--color1) 60%,
+    var(--color1) 100%
   );
   overflow: hidden;
 }
@@ -203,7 +208,7 @@
   display: block;
   width: 40%;
   height: 65%;
-  background: #c00000;
+  background: var(--color2);
   top: 17.5%;
   left: 30%;
   position: absolute;
@@ -254,36 +259,41 @@
 /* Bulleyes */
 
 .bullseye {
+  --color1: #fff;
+  --colorbg: #000;
   border-radius: 100%;
   background: radial-gradient(
     circle,
-    #000 0%,
-    #000 20%,
-    #fff 20.5%,
-    #fff 45.5%,
-    #000 46%,
-    #000 50.5%,
-    #fff 51%,
-    #fff 100%
+    var(--colorbg) 0%,
+    var(--colorbg) 20%,
+    var(--color1) 20.5%,
+    var(--color1) 45.5%,
+    var(--colorbg) 46%,
+    var(--colorbg) 50.5%,
+    var(--color1) 51%,
+    var(--color1) 100%
   );
 }
 
 /* Captain America */
 
 .captainamerica {
+  --color1: #005f99;
+  --color2: #ee2225;
+  --color3: #fff;
+  --color4: #ee2225;
+  --color5: #fff;
   border-radius: 100%;
   background: radial-gradient(
     circle,
-    #005f99 0%,
-    #005f99 24.5%,
-    #ee2225 25%,
-    #ee2225 41.5%,
-    #fff 42%,
-    #ffff 55.5%,
-    #ee2225 56%,
-    #ee2225 68.5%,
-    #1e1a1b 69%,
-    #1e1a1b 100%
+    var(--color1) 0%,
+    var(--color1) 24.5%,
+    var(--color2) 25%,
+    var(--color2) 41.5%,
+    var(--color3) 42%,
+    var(--color3) 55.5%,
+    var(--color4) 56%,
+    var(--color4) 100%
   );
 }
 
@@ -291,7 +301,7 @@
   --width2: calc(var(--width) * 0.35);
   position: absolute;
   top: calc(50% - (var(--width2) / 2));
-  background: #fff;
+  background: var(--color5);
   left: calc(50% - (var(--width2) / 2));
   display: block;
   content: "";
@@ -499,15 +509,17 @@
 /* Dr. Manhtattan */
 
 .drmanhattan {
+  --color1: #22284a;
+  --colorbg: #005f99;
   border-radius: 100%;
   background: radial-gradient(
     circle,
-    #22284a 0%,
-    #22284a 12.5%,
-    #005f99 13%,
-    #005f99 62.5%,
-    #22284a 63%,
-    #22284a 100%
+    var(--color1) 0%,
+    var(--color1) 12.5%,
+    var(--colorbg) 13%,
+    var(--colorbg) 62.5%,
+    var(--color1) 63%,
+    var(--color1) 100%
   );
 }
 
@@ -516,7 +528,7 @@
   display: block;
   width: calc(var(--width) / 8);
   height: calc(var(--width) / 8);
-  background: #22284a;
+  background: var(--color1);
   top: calc(0% - ((var(--width) / 8) / 3.5));
   left: calc(50% - ((var(--width) / 8) / 2));
   position: absolute;
@@ -625,13 +637,25 @@
 
 /* The Flash */
 
+.zoom,
 .flash {
-  background: #fff;
+  --color1: #f9e92f;
+  --color2: #facb33;
+  --colorbg: #fff;
+  background: var(--colorbg);
   border-radius: 100%;
-  border: calc(var(--width) * 0.09) solid #f9e92f;
+  border: calc(var(--width) * 0.09) solid var(--color1);
   box-sizing: border-box;
 }
 
+.zoom {
+  --color1: #7c0303;
+  --color2: #a90201;
+  --colorbg: #000;
+  transform: scalex(-1);
+}
+
+.zoom:after,
 .flash:after {
   content: "";
   display: block;
@@ -650,7 +674,7 @@
     70% 30%,
     53% 30%
   );
-  background: #facb33;
+  background: var(--color2);
   position: absolute;
   left: calc(var(--width) * -0.09);
 }
@@ -930,7 +954,7 @@
 
 /* Nightwing */
 
-.nightwing {  
+.nightwing {
   --color1: #1c8bc6;
   background: var(--color1);
   clip-path: polygon(
@@ -1397,13 +1421,16 @@
 /* Quicksilver */
 
 .quicksilver {
+  --color1: #044bfd;
+  --color2: #00ccff;
+  --color3: #fff;
   border-radius: 100%;
   background: linear-gradient(
     -45deg,
-    #044bfd 0%,
-    #044bfd 50%,
-    #00ccff 51%,
-    #00ccff 100%
+    var(--color1) 0%,
+    var(--color1) 50%,
+    var(--color2) 51%,
+    var(--color2) 100%
   );
   overflow: hidden;
 }
@@ -1416,7 +1443,7 @@
   right: 0;
   width: 100%;
   height: 100%;
-  background: #fff;
+  background: var(--color3);
   clip-path: polygon(
     70% 0%,
     100% 0%,
