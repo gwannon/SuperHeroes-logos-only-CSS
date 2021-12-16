@@ -298,8 +298,8 @@
   --color1: #005f99;
   --color2: #ee2225;
   --color3: #fff;
-  --color4: #ee2225;
-  --color5: #fff;
+  --color4: var(--color2);
+  --color5: var(--color3);
   border-radius: 100%;
   background: radial-gradient(
     circle,
@@ -1584,7 +1584,7 @@
 .xmen {
   --color1: #fdd807;
   --color2: #000;
-  --color3: #000;
+  --color3: var(--color2);
   --colorbg: #f90100;
   border-radius: 100%;
   border: calc(var(--width) * 0.06) solid var(--color1);
