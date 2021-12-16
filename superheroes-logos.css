@@ -1587,28 +1587,29 @@
   --color3: #000;
   --colorbg: #f90100;
   border-radius: 100%;
+  border: calc(var(--width) * 0.06) solid var(--color1);
+  box-sizing: border-box;
   background: radial-gradient(
     circle,
     var(--colorbg) 0%,
     var(--colorbg) 45.5%,
     var(--color2) 46%,
-    var(--color2) 62.5%,
-    #fdd807 63%,
-    #fdd807 100%
+    var(--color2) 100%
   );
+  overflow: hidden;
 }
 
 .xmen:after,
 .xmen:before {
   content: "";
   display: block;
-  width: 80%;
+  width: 110%;
   height: 10%;
   background: var(--color3);
   transform: rotate(45deg);
   transform-origin: 50% 50%;
   top: 45%;
-  left: 10%;
+  left: -5%;
   position: absolute;
 }
 
