@@ -105,7 +105,7 @@
   );
 }
 
-/* Aquaman */
+/* Aquaman TODO */
 
 .aquaman {
   height: calc(var(--width) * 0.8);
@@ -338,7 +338,7 @@
   height: var(--width2);
 }
 
-/* Captain Marvel */
+/* Captain Marvel TODO */
 
 .captainmarvel {
   border-radius: 100%;
@@ -897,19 +897,23 @@
   transform: skewX(-12deg);
 }
 
-/* Martian Manhunter */
+/* Martian Manhunter TODO */
 
 .martianmanhunter {
+  --color1: yellow;
+  --color2: #ff1100;
+  --color3: #348303; 
+  --colorbg: #171967;
   border-radius: 100%;
   background: conic-gradient(
-    #348303 0%,
-    #348303 14%,
-    #171967 14.1%,
-    #171967 86%,
-    #348303 86.1%,
-    #348303 100%
+    var(--color3) 0%,
+    var(--color3) 14%,
+    var(--colorbg) 14.1%,
+    var(--colorbg) 86%,
+    var(--color3) 86.1%,
+    var(--color3) 100%
   );
-  border: calc(var(--width) * 0.09) solid yellow;
+  border: calc(var(--width) * 0.09) solid var(--color1);
   overflow: hidden;
   box-sizing: border-box;
 }
@@ -918,13 +922,13 @@
 .martianmanhunter:before {
   content: "";
   display: block;
-  width: 101%;
+  width: 110%;
   height: 10%;
-  background: #ff1100;
+  background: var(--color2);
   transform: rotate(45deg);
   transform-origin: 50% 50%;
   top: 45%;
-  left: -0.5%;
+  left: -5%;
   position: absolute;
 }
 
@@ -935,13 +939,15 @@
 /* Ms. Marvel */
 
 .msmarvel {
+  --color1: #fffa5f;
+  --color2: #c6b118;
   width: calc(var(--width) / 1.8);
   background: linear-gradient(
     97deg,
-    #c6b118 0%,
-    #fffa5f 46%,
-    #fffa5f 52%,
-    #c6b118 100%
+    var(--color2) 0%,
+    var(--color1) 46%,
+    var(--color1) 52%,
+    var(--color2) 100%
   );
   clip-path: polygon(70% 0%, 0% 56%, 60% 56%, 30% 100%, 100% 44%, 40% 44%);
 }
@@ -1017,42 +1023,42 @@
 /* Nova Corps */
 
 .nova {
+  --color1: #6c1104;
+  --color2: #bc1b05;
   background: conic-gradient(
     from 0deg at 50% 73%,
-    #6c1104 0%,
-    #6c1104 6%,
-    #bc1b05 6.5%,
-    #bc1b05 10%,
-    #6c1104 10.5%,
-    #6c1104 15%,
-    #bc1b05 15.5%,
-    #bc1b05 20.5%,
-    #6c1104 21%,
-    #6c1104 30%,
-    #bc1b05 30.5%,
-    #bc1b05 37.5%,
-    #6c1104 38%,
-    #6c1104 43%,
-    #bc1b05 43.5%,
-    #bc1b05 44%,
-    #bc1b04 44.5%,
-    #bc1b04 50%,
-    #6c1104 50.5%,
-    #6c1104 56%,
-    #bc1b05 56.5%,
-    #bc1b05 62.5%,
-    #6c1104 63%,
-    #6c1104 68%,
-    #bc1b05 68.5%,
-    #bc1b05 79%,
-    #6c1104 79.5%,
-    #6c1104 83%,
-    #bc1b05 84.5%,
-    #bc1b05 90%,
-    #6c1104 90%,
-    #6c1104 93%,
-    #bc1b05 90.5%,
-    #bc1b05 100%
+    var(--color1) 0%,
+    var(--color1) 6%,
+    var(--color2) 6.5%,
+    var(--color2) 10%,
+    var(--color1) 10.5%,
+    var(--color1) 15%,
+    var(--color2) 15.5%,
+    var(--color2) 20.5%,
+    var(--color1) 21%,
+    var(--color1) 30%,
+    var(--color2) 30.5%,
+    var(--color2) 37.5%,
+    var(--color1) 38%,
+    var(--color1) 43%,
+    var(--color2) 43.5%,
+    var(--color2) 50%,
+    var(--color1) 50.5%,
+    var(--color1) 56%,
+    var(--color2) 56.5%,
+    var(--color2) 62.5%,
+    var(--color1) 63%,
+    var(--color1) 68%,
+    var(--color2) 68.5%,
+    var(--color2) 79%,
+    var(--color1) 79.5%,
+    var(--color1) 83%,
+    var(--color2) 84.5%,
+    var(--color2) 90%,
+    var(--color1) 90%,
+    var(--color1) 93%,
+    var(--color2) 90.5%,
+    var(--color2) 100%
   );
   clip-path: polygon(
     50% 0%,
@@ -1075,6 +1081,11 @@
 }
 
 /* Orion New Gods */
+.orion {
+  --color1: #c3bd63;
+  --color2: #fbf26e;
+  --colorbg: #f2554a;
+}
 
 .orion,
 .orion:before,
@@ -1083,10 +1094,10 @@
   height: calc(var(--width) * 0.8);
   background: radial-gradient(
     circle,
-    #f2554a 0%,
-    #f2554a 65%,
-    #fbf26e 66%,
-    #c3bd63 100%
+    var(--colorbg) 0%,
+    var(--colorbg) 65%,
+    var(--color2) 66%,
+    var(--color1) 100%
   );
   transform: rotatez(45deg);
 }
@@ -1176,11 +1187,13 @@
   );
 }
 
-/* Red Tornado */
+/* Red Tornado TODO */
 
 .redtornado {
+  --color1: #c00000;
+  --colorbg: #e4b92b;
   border-radius: 100%;
-  background: #e4b92b;
+  background: var(--colorbg);
   overflow: hidden;
 }
 
@@ -1189,7 +1202,7 @@
   display: block;
   width: 100%;
   height: 60%;
-  background: #c00000;
+  background: var(--color1);
   top: 40%;
   left: 0;
   position: absolute;
@@ -1205,7 +1218,7 @@
   );
 }
 
-/* Shazam */
+/* Shazam TODO */
 
 .shazam {
   width: calc(var(--width) / 1.8);
