@@ -29,6 +29,7 @@ Superheroes logos only with CSS3 and a simple div.
 * Nightwing
 * Nova Corps
 * Orion (New Gods)
+* The Outsiders
 * Phoenix
 * Red Hood
 * Red Tornado
