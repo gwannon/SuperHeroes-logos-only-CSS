@@ -1,3 +1,43 @@
+body {
+  background-color: #000000;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: Arial;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 25vw;
+  width: 25%;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+section:first-of-type,
+section:last-of-type {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100vw;
+  height: auto;
+}
+
+section:first-of-type > *,
+section:last-of-type > * {
+  --width: 4rem;
+}
+
+a {
+  color: #fff;
+}
+
 /* General */
 
 .avengers,
@@ -26,6 +66,7 @@
 .nightwing,
 .nova,
 .orion,
+.outsiders,
 .phoenix,
 .redhood,
 .redtornado,
@@ -185,7 +226,7 @@
   transform: scaleX(-1.5);
 }
 
-.bizarro:before, 
+.bizarro:before,
 .superman:before {
   width: var(--innerwidth);
   height: calc((var(--innerwidth) / 4) * 3);
@@ -897,12 +938,12 @@
   transform: skewX(-12deg);
 }
 
-/* Martian Manhunter TODO */
+/* Martian Manhunter */
 
 .martianmanhunter {
   --color1: yellow;
   --color2: #ff1100;
-  --color3: #348303; 
+  --color3: #348303;
   --colorbg: #171967;
   border-radius: 100%;
   background: conic-gradient(
@@ -1111,6 +1152,41 @@
 
 .orion:after {
   transform: rotatez(-60deg);
+}
+
+/* The Outsiders */
+
+.outsiders {
+  --color1: #fff;
+  --color2: var(--color1);
+  --colorbg: #000;
+  --color4: var(--color2);
+  --color5: var(--color3);
+  border-radius: 100%;
+  background: radial-gradient(
+    circle,
+    var(--colorbg) 0%,
+    var(--colorbg) 24.5%,
+    var(--color1) 25%,
+    var(--color1) 41.5%,
+    var(--colorbg) 42%,
+    var(--colorbg) 55.5%,
+    var(--color1) 56%,
+    var(--color1) 100%
+  );
+}
+
+.outsiders:before {
+  content: "";
+  display: block;
+  width: 110%;
+  height: 10%;
+  background: var(--color2);
+  transform: rotate(45deg);
+  transform-origin: 50% 50%;
+  top: 45%;
+  left: -5%;
+  position: absolute;
 }
 
 /* Phoenix */
@@ -1382,8 +1458,6 @@
   height: 35%;
   border-radius: 100%;
 }
-
-
 
 /* Titans */
 
