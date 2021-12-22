@@ -12,6 +12,7 @@ Superheroes logos only with CSS3 and a simple div.
 * Ciborg
 * Daredevil
 * Deadpool
+* Dr. Fate
 * Dr. Manhattan
 * Dr. Strange - With i inside
 * Fantastic Fours
