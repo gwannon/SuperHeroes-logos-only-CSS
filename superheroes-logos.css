@@ -106,7 +106,7 @@ a {
   border-color: var(--colorbg);
 }
 
-.avengers:before {
+.avengers::before {
   content: "";
   display: block;
   position: absolute;
@@ -118,7 +118,7 @@ a {
   clip-path: polygon(22% 78%, 36.5% 91%, 34% 96.5%, 18.5% 86%);
 }
 
-.avengers:after {
+.avengers::after {
   content: "";
   display: block;
   position: absolute;
@@ -169,7 +169,7 @@ a {
   );
 }
 
-.aquaman:before {
+.aquaman::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -211,8 +211,8 @@ a {
   --color1: #56007f;
 }
 
-.bizarro:after,
-.superman:after {
+.bizarro::after,
+.superman::after {
   content: "S";
   width: var(--width);
   height: calc((var(--width) / 4) * 3);
@@ -229,12 +229,12 @@ a {
   transform: scaleX(1.5);
 }
 
-.bizarro:after {
+.bizarro::after {
   transform: scaleX(-1.5);
 }
 
-.bizarro:before,
-.superman:before {
+.bizarro::before,
+.superman::before {
   width: var(--innerwidth);
   height: calc((var(--innerwidth) / 4) * 3);
   content: " ";
@@ -264,7 +264,7 @@ a {
   overflow: hidden;
 }
 
-.blackwidow:before {
+.blackwidow::before {
   content: "";
   display: block;
   width: 40%;
@@ -297,7 +297,7 @@ a {
   clip-path: polygon(0% 12%, 50% 26%, 100% 12%, 50% 92%);
 }
 
-.boostergold:before {
+.boostergold::before {
   --width2: calc(var(--width) * 0.35);
   position: absolute;
   top: calc(50% - (var(--width2) / 2));
@@ -362,7 +362,7 @@ a {
   );
 }
 
-.captainamerica:before {
+.captainamerica::before {
   --width2: calc(var(--width) * 0.35);
   position: absolute;
   top: calc(50% - (var(--width2) / 2));
@@ -401,7 +401,7 @@ a {
   overflow: hidden;
 }
 
-.captainmarvel:before {
+.captainmarvel::before {
   position: absolute;
   top: 0;
   background: conic-gradient(
@@ -424,7 +424,7 @@ a {
   content: "";
 }
 
-.captainmarvel:after {
+.captainmarvel::after {
   position: absolute;
   top: 32.5%;
   background: radial-gradient(circle, #fec90d 0%, #fec90d 25%, #856918 63%);
@@ -478,7 +478,7 @@ a {
   );
 }
 
-.ciborg:before {
+.ciborg::before {
   content: "";
   display: block;
   width: 10.5%;
@@ -506,8 +506,8 @@ a {
   font-size: var(--width);
 }
 
-.daredevil:before,
-.daredevil:after {
+.daredevil::before,
+.daredevil::after {
   content: "D";
   display: block;
   position: absolute;
@@ -515,7 +515,7 @@ a {
   left: 0;
 }
 
-.daredevil:after {
+.daredevil::after {
   top: calc((var(--width) / 5) / 2);
   left: calc(var(--width) / 5);
 }
@@ -542,8 +542,8 @@ a {
   overflow: hidden;
 }
 
-.deadpool:after,
-.deadpool:before {
+.deadpool::after,
+.deadpool::before {
   --width2: calc(var(--width) * 0.3);
   --height2: calc((var(--width2) / 3) * 1.5);
   content: "";
@@ -558,7 +558,7 @@ a {
   transform: rotate(22deg);
 }
 
-.deadpool:before {
+.deadpool::before {
   left: calc(80% - (var(--width2) / 2));
   border-bottom-left-radius: calc((var(--width2) / 3) + (var(--width2) / 10));
   border-bottom-right-radius: calc(var(--width2) - (var(--width2) / 10));
@@ -567,7 +567,7 @@ a {
   transition: height 0.3s, top 0.3s;
 }
 
-.deadpool:hover:before {
+.deadpool:hover::before {
   height: 1px;
   top: calc(55% - (var(--height2) / 2));
 }
@@ -578,7 +578,7 @@ a {
   --color1: #c6b118;
 }
 
-.drfate:after {
+.drfate::after {
   content: "";
   display: block;
   position: absolute;
@@ -590,7 +590,7 @@ a {
   clip-path: polygon(42% 100%, 45% 65%, 25% 67%, 20% 56%, 45% 58%, 35% 37%, 43% 31%, 50% 47%, 57% 31%, 66% 34%, 55% 58%, 80% 56%, 75% 67%, 55% 65%, 57% 100%);
 }
 
-.drfate:before {
+.drfate::before {
   content: "";
   display: block;
   position: absolute;
@@ -623,7 +623,7 @@ a {
   );
 }
 
-.drmanhattan:before {
+.drmanhattan::before {
   content: "";
   display: block;
   width: calc(var(--width) / 8);
@@ -659,10 +659,10 @@ a {
   transform: rotate(80deg);
 }
 
-.drstrange:before,
-.drstrange:after,
-.drstrange > *:after,
-.drstrange > *:before {
+.drstrange::before,
+.drstrange::after,
+.drstrange > *::after,
+.drstrange > *::before {
   content: "";
   display: block;
   width: 200%;
@@ -675,19 +675,19 @@ a {
   position: absolute;
 }
 
-.drstrange:after,
-.drstrange > *:after {
+.drstrange::after,
+.drstrange > *::after {
   top: 60%;
   border-top: calc(var(--width) * 0.03) solid var(--color1);
 }
 
-.drstrange > *:before {
+.drstrange > *::before {
   top: -77%;
   transform: rotate(27deg);
   right: -35%;
 }
 
-.drstrange > *:after {
+.drstrange > *::after {
   top: 73%;
   transform: rotate(-10deg);
 }
@@ -708,7 +708,7 @@ a {
   overflow: hidden;
 }
 
-.fantasticfours:before {
+.fantasticfours::before {
   content: "";
   display: block;
   position: absolute;
@@ -755,8 +755,8 @@ a {
   transform: scalex(-1);
 }
 
-.zoom:after,
-.flash:after {
+.zoom::after,
+.flash::after {
   content: "";
   display: block;
   width: var(--width);
@@ -796,7 +796,7 @@ a {
   );
 }
 
-.greenlantern:after {
+.greenlantern::after {
   content: "";
   display: block;
   background: var(--color1);
@@ -835,7 +835,7 @@ a {
   overflow: hidden;
 }
 
-.hawkeye:before {
+.hawkeye::before {
   content: "";
   display: block;
   width: 55%;
@@ -866,7 +866,7 @@ a {
   );
 }
 
-.indigolanterns:before {
+.indigolanterns::before {
   content: "";
   display: block;
   position: absolute;
@@ -909,7 +909,7 @@ a {
   overflow: hidden;
 }
 
-.legionsuperheroes:after {
+.legionsuperheroes::after {
   content: "";
   display: block;
   width: 71%;
@@ -922,7 +922,7 @@ a {
   border-left: calc(var(--width) * 0.12) solid var(--color1);
 }
 
-.legionsuperheroes:before {
+.legionsuperheroes::before {
   content: "";
   display: block;
   position: absolute;
@@ -965,7 +965,7 @@ a {
   overflow: hidden;
 }
 
-.lexcorp:after {
+.lexcorp::after {
   content: "";
   display: block;
   width: 71%;
@@ -1000,8 +1000,8 @@ a {
   box-sizing: border-box;
 }
 
-.martianmanhunter:after,
-.martianmanhunter:before {
+.martianmanhunter::after,
+.martianmanhunter::before {
   content: "";
   display: block;
   width: 110%;
@@ -1014,7 +1014,7 @@ a {
   position: absolute;
 }
 
-.martianmanhunter:before {
+.martianmanhunter::before {
   transform: rotate(-45deg);
 }
 
@@ -1054,7 +1054,7 @@ a {
   overflow: hidden;
 }
 
-.moonknight:before {
+.moonknight::before {
   content: "";
   display: block;
   width: 55%;
@@ -1172,8 +1172,8 @@ a {
 }
 
 .orion,
-.orion:before,
-.orion:after {
+.orion::before,
+.orion::after {
   width: calc(var(--width) * 0.8);
   height: calc(var(--width) * 0.8);
   background: radial-gradient(
@@ -1186,14 +1186,14 @@ a {
   transform: rotatez(45deg);
 }
 
-.orion:before,
-.orion:after {
+.orion::before,
+.orion::after {
   content: "";
   position: absolute;
   transform: rotatez(60deg);
 }
 
-.orion:after {
+.orion::after {
   transform: rotatez(-60deg);
 }
 
@@ -1219,7 +1219,7 @@ a {
   );
 }
 
-.outsiders:before {
+.outsiders::before {
   content: "";
   display: block;
   width: 110%;
@@ -1316,7 +1316,7 @@ a {
   overflow: hidden;
 }
 
-.redtornado:before {
+.redtornado::before {
   content: "";
   display: block;
   width: 100%;
@@ -1363,7 +1363,7 @@ a {
   );
 }
 
-.shazam:after {
+.shazam::after {
   content: "";
   display: block;
   width: calc(var(--width) / 1.8);
@@ -1406,7 +1406,7 @@ a {
   overflow: hidden;
 }
 
-.shehulk:before {
+.shehulk::before {
   content: "";
   display: block;
   border-radius: 100%;
@@ -1432,7 +1432,7 @@ a {
   position: absolute;
 }
 
-.shehulk:after {
+.shehulk::after {
   content: "";
   display: block;
   border-radius: 100%;
@@ -1461,7 +1461,7 @@ a {
   );
 }
 
-.starsapphire:before {
+.starsapphire::before {
   position: absolute;
   top: 10%;
   background: var(--color1);
@@ -1490,7 +1490,7 @@ a {
   height: 80%;
 }
 
-.starsapphire:after {
+.starsapphire::after {
   position: absolute;
   top: 32.5%;
   background: var(--colorbg);
@@ -1512,7 +1512,7 @@ a {
   box-sizing: border-box;
 }
 
-.titans:before {
+.titans::before {
   content: "";
   display: block;
   width: calc(100% - (var(--width) * 0.08));
@@ -1551,7 +1551,7 @@ a {
   overflow: hidden;
 }
 
-.quicksilver:before {
+.quicksilver::before {
   content: "";
   display: block;
   position: absolute;
@@ -1599,8 +1599,8 @@ a {
   );
 }
 
-.vixen:before,
-.vixen:after {
+.vixen::before,
+.vixen::after {
   content: "";
   display: block;
   position: absolute;
@@ -1614,7 +1614,7 @@ a {
   clip-path: polygon(0% 50%, 60% 30%, 100% 50%, 100% 100%, 0% 100%);
 }
 
-.vixen:after {
+.vixen::after {
   left: 56%;
   transform: scalex(-1) rotate(45deg);
 }
@@ -1637,7 +1637,7 @@ a {
   overflow: hidden;
 }
 
-.wintersoldier:after {
+.wintersoldier::after {
   --width2: calc(var(--width) * 0.5);
   position: absolute;
   top: calc(50% - (var(--width2) / 2));
@@ -1661,7 +1661,7 @@ a {
   height: var(--width2);
 }
 
-.wintersoldier:before {
+.wintersoldier::before {
   display: block;
   content: "";
   left: 0;
@@ -1729,8 +1729,8 @@ a {
   overflow: hidden;
 }
 
-.xmen:after,
-.xmen:before {
+.xmen::after,
+.xmen::before {
   content: "";
   display: block;
   width: 110%;
@@ -1743,10 +1743,6 @@ a {
   position: absolute;
 }
 
-.xmen:before {
+.xmen::before {
   transform: rotate(-45deg);
 }
-
-
-
-
